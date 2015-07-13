@@ -23,7 +23,7 @@
                 <li><a href="#guarantee">Contacts</a></li>
             </ul>
             <ul class="navigation-bar navigation-bar-right">
-                <li><a href="/blog">Blog</a></li>
+                <li><a href="/sp/blog">Blog</a></li>
                 <li><a href="register.html">Login</a></li>
                 <li class="featured"><a href="register.html">Sign up</a></li>
             </ul>  

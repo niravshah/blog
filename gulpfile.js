@@ -36,7 +36,7 @@ gulp.task('watch', ['connect'], function() {
     gulp.watch(['./src/**/*', './templates/**/*','./assets/**/*'], ['copyStatic']);    
 });
 
-gulp.task('metalsmith', function() {
+gulp.task('metalsmith', ['clean'], function() {
     gulp.src("./src/**/*")
         .pipe(gulp_front_matter()).on("data", function(file) {
             assign(file, file.frontMatter);
