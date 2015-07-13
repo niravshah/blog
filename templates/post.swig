@@ -1,4 +1,4 @@
-{% extends "layout.swig" %}
+{% extends "layout/layout.swig" %}
 
 {% block content %}
 <div id="post">

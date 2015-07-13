@@ -1,5 +1,5 @@
 ---
 title: Blog Home
-template: index.swig
+template: blog.swig
 link: blog
 ---

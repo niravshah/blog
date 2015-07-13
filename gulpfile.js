@@ -16,27 +16,24 @@ var gulpsmith = require('gulpsmith'),
     templates = require('metalsmith-templates'),
     permalinks = require('metalsmith-permalinks'),
     collections = require('metalsmith-collections'),
-    //Handlebars = require('handlebars'),
     fs = require('fs');
 
-// Handlebars
-/*Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/templates/partials/header.hbt').toString());
-Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/templates/partials/footer.hbt').toString());
-Handlebars.registerHelper("log", function(something) {
-  console.log(something);
-});*/
 
 // Gulp tasks
 gulp.task('default', function (cb) {
-    runSequence('clean', ['metalsmith','connect'], cb);    
+    runSequence('clean', ['copyStatic','watch'], cb);    
 });
 
 gulp.task('connect', function() {
     connect.server({
         root: './build',
         port: 4000,
-        livereload: true
+        livereload: false
     });
+});
+
+gulp.task('watch', ['connect'], function() {
+    gulp.watch(['./src/**/*', './templates/**/*','./assets/**/*'], ['copyStatic']);    
 });
 
 gulp.task('metalsmith', function() {
@@ -62,6 +59,14 @@ gulp.task('metalsmith', function() {
         ).pipe(gulp.dest("./build"))
         .pipe(connect.reload());
 });
+
+
+gulp.task('copyStatic', ['metalsmith'], function() {
+    gulp.src("./assets/**")
+        .pipe(gulp.dest("./build/assets"))
+        .pipe(connect.reload());
+});
+
 
 gulp.task('clean', function() {
     return gulp.src('./build', {read: false})
