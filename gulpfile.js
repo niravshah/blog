@@ -26,9 +26,44 @@ Handlebars.registerHelper("log", function(something) {
   console.log(something);
 });
 
-
 // Gulp tasks
 gulp.task('default', function (cb) {
-    //runSequence('clean', ['metalsmith', 'less'], cb);
-    console.log('Gulp Up!');
+    runSequence('clean', ['metalsmith','connect'], cb);    
+});
+
+gulp.task('connect', function() {
+    connect.server({
+        root: './build',
+        port: 4000,
+        livereload: true
+    });
+});
+
+gulp.task('metalsmith', function() {
+    gulp.src("./src/**/*")
+        .pipe(gulp_front_matter()).on("data", function(file) {
+            assign(file, file.frontMatter);
+            delete file.frontMatter;
+        }).pipe(
+            gulpsmith()
+                .use(collections({
+                    page: {
+                        pattern: 'pages/*.md'
+                    },
+                    post: {
+                        pattern: 'posts/*.md',
+                        sortBy: 'datetime',
+                        reverse: true
+                    }
+                }))
+                .use(markdown())
+                .use(templates('handlebars'))
+                .use(permalinks(':collection/:link'))
+        ).pipe(gulp.dest("./build"))
+        .pipe(connect.reload());
+});
+
+gulp.task('clean', function() {
+    return gulp.src('./build', {read: false})
+        .pipe(clean());
 });
