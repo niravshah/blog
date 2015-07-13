@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>{{ title|default("Specky") }}</title>
+		<title>Specky</title>
 		<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-196x196.png" sizes="196x196" />
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-96x96.png" sizes="96x96" />
@@ -26,51 +26,31 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 
-		{# This file provides the default styling for the KeystoneJS Content Editor #}
-		{%- if user and user.canAccessKeystone -%}
-			<link href="/keystone/styles/content/editor.min.css" rel="stylesheet">
-		{%- endif -%}
-
-		{# HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-		   Safely remove this block if you are not targeting IE8 #}
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		{# Include template-specific stylesheets by extending the css block #}
-		{%- block css %}{% endblock -%}
-
-		{# Add any other template-specific HEAD tags by extending the head block #}
-		{%- block head %}{% endblock %}
 	</head>
 	<body id="landing-page">
 
-		{# HEADER #}
 	 <!-- Preloader -->
         <div id="mask">
             <div id="loader"></div>
         </div>
 
         <header>
-            {#NAV BAR#}
-            {%- block nav -%}{%- endblock -%}
+            {{#block "nav"}}
+            {{/block}}
         </header>
 
-		{# BODY #}
+
 		<div id="body">
-			{# NOTE:
-			   There is no .container wrapping class around body blocks to allow more flexibility in design.
-			   Remember to include it in your templates when you override the intro and content blocks! #}
-
-			{# The Intro block appears above flash messages (used for temporary information display) #}
-			{%- block intro -%}{%- endblock -%}
-
-			{# The content block should contain the body of your template"s content #}
-			{%- block content -%}{%- endblock -%}
+			{{#block "main"}}
+            {{/block}}
 		</div>
 
-		{# FOOTER #}
+	
       <footer id="footer" class="footer light">
             <div class="container">
                 <div class="footer-content row">
@@ -119,8 +99,6 @@
         </footer>
 
         <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
-
-		{# JAVASCRIPT #}
 
         <!--[if lt IE 9]>
             <script type="text/javascript" src="/assets/js/jquery-1.11.0.min.js?ver=1"></script>

@@ -1,6 +1,6 @@
-{% extends "layout/default.swig" %}
+{{#extend "layout"}}
 
-{% block nav%}
+{{#content "nav"}}
 <nav class="navigation navigation-header">
     <div class="container">
         <div class="navigation-brand">
@@ -30,10 +30,10 @@
         </div>
     </div>
  </nav>
-{% endblock%}
+{{/content}}
 
 
-{% block content %}
+{{#content "main"}}
 <div id="hero" class="static-header light clearfix">
     <div class="text-heading">
         <h1 class="animated hiding" data-animation="bounceInDown" data-delay="0"><span class="highlight">Intelligent</span> Job Specifications</h1>
@@ -563,4 +563,5 @@
         </div>
     </div>
 </section>
-{% endblock %}
+{{/content}}
+{{/extend}}

@@ -1,5 +1,5 @@
 ---
 title: Specky
-template: index.swig
+template: index.hbt
 permalink: false
 ---

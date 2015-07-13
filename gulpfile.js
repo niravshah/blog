@@ -18,6 +18,16 @@ var gulpsmith = require('gulpsmith'),
     collections = require('metalsmith-collections'),
     fs = require('fs');
 
+var handlebars = require('handlebars'),
+    layouts = require('handlebars-layouts');
+ 
+handlebars.registerHelper(layouts(handlebars));
+handlebars.registerPartial('layout', fs.readFileSync(__dirname + '/templates/layout/default.hbt').toString());
+handlebars.registerHelper("log", function(something) {
+  console.log(something);
+});
+
+
 
 // Gulp tasks
 gulp.task('default', function (cb) {
@@ -36,10 +46,10 @@ gulp.task('watch', ['connect'], function() {
     gulp.watch(['./src/**/*', './templates/**/*','./assets/**/*'], ['copyStatic']);    
 });
 
-gulp.task('metalsmith', ['clean'], function() {
+gulp.task('metalsmith', function() {
     gulp.src("./src/**/*")
-        .pipe(gulp_front_matter()).on("data", function(file) {
-            assign(file, file.frontMatter);
+        .pipe(gulp_front_matter()).on("data", function(file) {            
+            assign(file, file.frontMatter);                        
             delete file.frontMatter;
         }).pipe(
             gulpsmith()
@@ -54,10 +64,9 @@ gulp.task('metalsmith', ['clean'], function() {
                     }
                 }))
                 .use(markdown())
-                .use(templates('swig'))
+                .use(templates('handlebars'))
                 .use(permalinks(':collection/:link'))
-        ).pipe(gulp.dest("./build"))
-        .pipe(connect.reload());
+        ).pipe(gulp.dest("./build"));        
 });
 
 

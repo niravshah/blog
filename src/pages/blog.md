@@ -1,5 +1,5 @@
 ---
 title: Blog Home
-template: blog.swig
+template: blog.hbt
 link: blog
 ---

@@ -34,6 +34,7 @@
     "metalsmith-permalinks": "~0.4.0",
     "metalsmith-collections": "~0.7.0",
     "handlebars": "~3.0.3",
-    "swig": "~1.4.2"
+    "swig": "~1.4.2",
+    "handlebars-layouts": "~3.1.0"
   }
 }

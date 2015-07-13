@@ -1,7 +1,6 @@
-{% extends "layout/default.swig" %}
+{{#extend "layout"}}
 
-
-{% block nav%}
+{{#content "nav"}}
 <nav class="navigation navigation-header">
     <div class="container">
         <div class="navigation-brand">
@@ -29,21 +28,23 @@
         </div>
     </div>
  </nav>
-{% endblock%}
+{{/content}}
 
-{% block content %}
+{{#content "main"}}
 <div id="hero" class="static-header blog-header light clearfix">
     <div class="text-heading">
         <h1>{{title}}</h1>
     </div>
 </div>
-<div id="post">    
+<div id="post">
+    <h1>{{{title}}}</h1>
     <article>
-        {{contents}}      
+        {{{contents}}}
         <p>
-            <span class="author">By <a rel="author" href="mailto:{{author.email}}">{{author.name}}</a></span> 
-            on <time pubdate datetime="{{datetime}}">{{datetime}}</time>
+            <span class="author">By <a rel="author" href="mailto:{{{this.author.email}}}">{{{this.author.name}}}</a></span> 
+            on <time pubdate datetime="{{{this.datetime}}}">{{{this.datetime}}}</time>
         </p>
     </article>
 </div>
-{% endblock %}
+{{/content}}
+{{/extend}}
