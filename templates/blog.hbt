@@ -32,20 +32,33 @@
 
 
 {{#content "main"}}
-<div id="sub-hero" class="static-header blog-header light clearfix">
-    <div class="text-heading">
-        <h1>Blog</h1>
+<div id="body" class="blog-body">
+<div class= "container blog-outer-container" id="blog">
+    <div class="row blog-inner-container">
+        <div class="col-md-8">
+            <div class="row">
+            {{#each collections.post}}
+            <div class="col-md-5 col-xs-12">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="{{{this.img}}}">
+                    <span class="card-title"><a href="/post/{{{this.link}}}">{{this.title}}</a></span>
+                </div>
+                <div class="card-content">
+                    <p>{{{this.short}}}</p>
+                </div>
+                 <div class="card-action">
+                    <a href="/post/{{{this.link}}}" target="new_blank">Read More</a>
+                </div>
+            </div>
+                </div>
+            {{/each}}
+            </div>
+        </div>
+        <div class="col-md-4 well hidden-xs">
+        </div>
     </div>
 </div>
-<div id="home">
-    {{#each collections.post}}
-    <div class="post_short">
-        <h1><a href="/post/{{{this.link}}}">{{this.title}}</a></h1>
-        <article>
-            {{{this.short}}}
-        </article>
     </div>
-    {{/each}}
-</div>
 {{/content}}
 {{/extend}}

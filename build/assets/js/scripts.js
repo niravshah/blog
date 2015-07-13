@@ -56,7 +56,7 @@
             }
         };
 	
-	if($('#registration').length == 0) {
+	if($('#registration').length == 0 && $('#blog').length == 0 && $('#post ').length == 0) {
 		var fixmenu = new Headhesive('.navigation-header', options); // init
 	}
 	

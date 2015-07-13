@@ -1,8 +1,8 @@
 ---
-title: A New Site
-link: a-new-site
+title: Second Post
+link: second-post
 template: post.hbt
-datetime: 2015-03-13 12:00:00
+datetime: 2015-07-13 12:00:00
 img: http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png
 author: 
     name: Mike Valstar

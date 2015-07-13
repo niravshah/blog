@@ -582,6 +582,13 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
 .fixmenu-clone.navigation-header .navigation-toggle { border: 1px solid #1ac6ff; opacity: 1;}
 .fixmenu-clone.navigation-header .navigation-toggle .icon-bar { background: #1ac6ff; }
 
+/*Custom Styles*/
+.blog-outer-container{padding-top:100px;padding-bottom:20px;}
+.blog-inner-container{background-color:white;padding:40px;}
+.blog-body{background: url('/assets/img/background/low_poly_background.jpg') repeat-y center center;}
+#post h1{font-size:30px;margin-top:0px;}
+
+
 
 /* Mobile device 767px */
 @media (max-width: 767px) {
@@ -702,6 +709,11 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
 	.social-wrap:after { clear:both; }
 	
     #guarantee h2, #guarantee p { text-align: center; }
+    
+    
+    /*Custom Styles*/
+    .blog-inner-container{background-color:white;padding:10px;}
+    
 }
 
 /* Mobile device 540px */
@@ -963,3 +975,6 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
     #featuredTab .tab-content { position: absolute; top: -60px; right: 0px; padding: 0; border: none; z-index: 1; }   
     
 }
+
+
+
