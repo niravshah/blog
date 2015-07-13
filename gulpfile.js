@@ -43,8 +43,8 @@ gulp.task('metalsmith', function() {
             delete file.frontMatter;
         }).pipe(
             gulpsmith()
-                .use(collections({
-                    page: {
+                .use(collections({                   
+                    sp: {
                         pattern: 'pages/*.md'
                     },
                     post: {
