@@ -1,7 +1,7 @@
 ---
 title: A New Site
 link: a-new-site
-template: post.hbt
+template: post.swig
 datetime: 2015-03-13 12:00:00
 author: 
     name: Mike Valstar

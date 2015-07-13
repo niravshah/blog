@@ -16,15 +16,15 @@ var gulpsmith = require('gulpsmith'),
     templates = require('metalsmith-templates'),
     permalinks = require('metalsmith-permalinks'),
     collections = require('metalsmith-collections'),
-    Handlebars = require('handlebars'),
+    //Handlebars = require('handlebars'),
     fs = require('fs');
 
 // Handlebars
-Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/templates/partials/header.hbt').toString());
+/*Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/templates/partials/header.hbt').toString());
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/templates/partials/footer.hbt').toString());
 Handlebars.registerHelper("log", function(something) {
   console.log(something);
-});
+});*/
 
 // Gulp tasks
 gulp.task('default', function (cb) {
@@ -57,7 +57,7 @@ gulp.task('metalsmith', function() {
                     }
                 }))
                 .use(markdown())
-                .use(templates('handlebars'))
+                .use(templates('swig'))
                 .use(permalinks(':collection/:link'))
         ).pipe(gulp.dest("./build"))
         .pipe(connect.reload());
