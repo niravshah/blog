@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
         
-        <title>Specky - Blog</title>
+        <title>Specky - Register</title>
         <meta name="description" content="Intelligent Job Descriptions & Specs. Improve candidate engagement by providing candidates the information that helps them make crucial career decisions.">
         <meta name="keywords" content="recruting, passive candidates, job specs, job descriptions">
         
@@ -53,69 +53,91 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <div class="navigation-navbar">        
-            <ul class="navigation-bar navigation-bar-left">
-                <li class="active"><a href="#latest">Latest</a></li>
-                <li><a href="#most-read">Most Read</a></li>
-                <li><a href="#most-liked">Most Liked</a></li>
-            </ul>                       
-            
+        <div class="navigation-navbar">                                    
             <ul class="navigation-bar navigation-bar-right">
                 <li><a href="/">Home</a></li>
-                <li class="active-main"><a href="/sp/blog">Blog</a></li>
-                <li><a href="/sp/register">Login</a></li>
-                <li class="featured"><a href="/sp/register">Sign up</a></li>
+                <li ><a href="/sp/blog">Blog</a></li>
+                <li><a href="register.html">Login</a></li>
+                <li class="active-main"><a href="/sp/register">Sign up</a></li>
             </ul>              
         </div>
     </div>
  </nav>
         </header>		
-<div id="body" class="blog-body">
-<div class= "container blog-outer-container" id="blog">
-    <div class="row blog-inner-container">
-        <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/">Home</a>
-            </li>
-            <li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/sp/blog">Blog</a>
-            </li>
-        </ol>            
-        <div class="col-md-8">
-            <div class="row">
-            <div class="col-md-5 col-xs-12">
-            <div class="card">
-                <div class="card-image">
-                    <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
-                    <span class="card-title"><a href="/post/second-post">Second Post</a></span>
-                </div>
-                <div class="card-content">
-                    <p><p>I've gotten in the habbit of re-working my website every year or so due to it  not having one or more features. The features I want to show are generally to highlight both my skill as a web developer and to make the website robust enough to write  any type of page/tutorial/video/other.</p></p>
-                </div>
-                 <div class="card-action">
-                    <a href="/post/second-post" target="new_blank">Read More</a>
-                </div>
+<div id="hero" class="static-header light">
+    <div class="text-heading">
+        <h1>Start Your <span class="highlight">30-Day</span> Free Trial</h1>
+        <p>Stop pirates from stealing your products and <span>increase sales now!</span></p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                <form class="form form-register dark" id="registration" method="post" action="signup.php">
+                    <div class="form-group">
+                        <label for="fullname" class="col-sm-3 col-xs-12 control-label">Full name</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" class="form-control required" name="fullname" id="fullname" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="website" class="col-sm-3 col-xs-12 control-label">Site address</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="text" class="form-control" name="website" id="website" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 col-xs-12 control-label">Email address</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="email" class="form-control required email" name="email" id="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 col-xs-12 control-label">Password</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="password" class="form-control required" name="password" id="password" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword" class="col-sm-3 col-xs-12 control-label">Password</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input type="password" class="form-control required" name="confirmPassword" id="confirmPassword" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="newsletter" value="1"> Submit to the monthly newsletter
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Get started</button>
+                </form>
+
+                <p class="agree-text">By clicking you agree to our Terms of Service, Privacy Policy & Refund Policy.<br />
+                    I have a referral code I'd like to enter</p>
             </div>
-                </div>
-            <div class="col-md-5 col-xs-12">
-            <div class="card">
-                <div class="card-image">
-                    <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
-                    <span class="card-title"><a href="/post/a-new-site">A New Site</a></span>
-                </div>
-                <div class="card-content">
-                    <p><p>I've gotten in the habbit of re-working my website every year or so due to it  not having one or more features. The features I want to show are generally to highlight both my skill as a web developer and to make the website robust enough to write  any type of page/tutorial/video/other.</p></p>
-                </div>
-                 <div class="card-action">
-                    <a href="/post/a-new-site" target="new_blank">Read More</a>
-                </div>
-            </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 well hidden-xs">
         </div>
     </div>
+
+    <h4>These companies <span>trust us</span></h4>        
 </div>
+
+<div id="clients">
+    <div class="container">
+        <ul class="list-inline logos">
+            <li><img src="/assets/img/logos/logo-1.png" alt="mashable" /></li>
+            <li><img src="/assets/img/logos/logo-2.png" alt="tnw" /></li>
+            <li><img src="/assets/img/logos/logo-3.png" alt="virgin" /></li>
+            <li><img src="/assets/img/logos/logo-4.png" alt="microsoft" /></li>
+            <li><img src="/assets/img/logos/logo-5.png" alt="forbes" /></li>
+        </ul>
+    </div>
 </div>
+
+<div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>    
 		
       <footer id="footer" class="footer light">
             <div class="container">
