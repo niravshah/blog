@@ -2,13 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-        <meta name="description" content="Specky Intelligent Job Descriptions">
+        
+        <title>Specky - {{{page-title}}}</title>
+        <meta name="description" content="{{{page-description}}}">
         <meta name="keywords" content="recruting, passive candidates, job specs, job descriptions">
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-		<title>Specky</title>
+		
 		<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-196x196.png" sizes="196x196" />
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-96x96.png" sizes="96x96" />

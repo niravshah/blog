@@ -1,4 +1,6 @@
 ---
+page-title: Blog - Second Post
+page-description: Intelligent Job Descriptions & Specs. Improve candidate engagement by providing candidates the information that helps them make crucial career decisions. 
 title: Second Post
 link: second-post
 template: post.hbt

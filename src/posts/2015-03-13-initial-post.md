@@ -1,4 +1,6 @@
 ---
+page-title: Blog - A New Site
+page-description: Intelligent Job Descriptions & Specs. Improve candidate engagement by providing candidates the information that helps them make crucial career decisions. 
 title: A New Site
 link: a-new-site
 template: post.hbt

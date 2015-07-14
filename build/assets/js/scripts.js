@@ -21,7 +21,7 @@
 		else if(width < 960) size = "Tablet";
 		else size = "Desktop";
 		// $('#screen').html( size + ' - ' + width );
-		// console.log( size, width );
+		// console.log( size, width );  
 	};	
 	
     //Preloader

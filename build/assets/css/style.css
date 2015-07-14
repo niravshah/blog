@@ -258,12 +258,13 @@ blockquote:after { font-family: "line-icons";  position: absolute; color: #1ac6f
 
 /* Navigation Header */
 .navigation-header { position: absolute; top:10px; background: transparent; left: 0; right: 0; width: 100%; z-index: 99; }
-.navigation-header .navigation-brand { margin-right: 125px;}
+.navigation-header .navigation-brand { margin-right: 25px;}
 .navigation-header .navigation-bar > li { padding: 15px 15px; }
 .navigation-header .navigation-bar > li > a { font-size: 13px; text-transform: uppercase; color: #eff3f6; border-bottom: 2px solid transparent; padding: 10px 0; line-height: 13px; opacity: 0.8; }
 
 .navigation-header .navigation-bar > li > a:Hover { opacity: 0.9; }
 .navigation-header .navigation-bar-left > li.active > a { color: #fff; border-bottom: 2px solid #1ac6ff; opacity: 0.9; }
+.navigation-header .navigation-bar-right > li.active-main > a { color: #fff; border-bottom: 2px solid #1ac6ff; opacity: 0.9; }
 .navigation-header .navigation-bar > li.featured { padding: 15px 0; }
 .navigation-header .navigation-bar > li.featured > a { border: 1px solid #1ac6ff; color: #1ac6ff; padding: 10px 25px; display: inline-block; opacity: 1; border-radius: 3px; }
 .navigation-header .navigation-bar > li.featured > a:Hover { opacity: .9; background:#1ac6ff; color:#fff; }
