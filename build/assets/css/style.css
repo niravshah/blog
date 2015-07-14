@@ -34,11 +34,11 @@ strong { font-family: 'Lato', sans-serif; font-weight: 700; }
 body { color: #000; font-size: 16px; line-height:27px; background: #fff; margin: 0; }
 
 h1 { font-size: 58px; font-weight: 300; display: block; } 
-h2 { font-size: 47px; font-weight: 300; display: block; } 
-h3 { font-size: 34px; font-weight: 300; display: block; } 
-h4 { font-size: 28px; font-weight: 300; display: block; } 
-h5 { font-size: 24px; font-weight: 300; display: block; }
-h6 { font-size: 20px; font-weight: 700; display: block; }
+h2 { font-size: 37px; font-weight: 300; display: block; } 
+h3 { font-size: 24px; font-weight: 300; display: block; } 
+h4 { font-size: 18px; font-weight: 300; display: block; } 
+h5 { font-size: 14px; font-weight: 300; display: block; }
+h6 { font-size: 10px; font-weight: 700; display: block; }
 .h7 { font-size: 17px; font-weight: 700; display: block; }
 
 .highlight { color: #1ac6ff; } 

@@ -38,7 +38,7 @@ gulp.task('connect', function() {
     connect.server({
         root: './build',
         port: 4000,
-        livereload: false
+        livereload: true
     });
 });
 
@@ -77,7 +77,7 @@ gulp.task('copyStatic', ['metalsmith'], function() {
 });
 
 
-gulp.task('clean', function() {
+gulp.task('clean', function() {    
     return gulp.src('./build', {read: false})
         .pipe(clean());
 });
