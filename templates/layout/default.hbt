@@ -114,7 +114,8 @@
         <script type="text/javascript" src="/assets/js/toastr.min.js"></script>
         <script type="text/javascript" src="/assets/js/headhesive.min.js"></script>
         <script type="text/javascript" src="/assets/mailchimp/js/mailing-list.js"></script>
-        <script type="text/javascript" src="/assets/js/scripts.js"></script>                
         <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+        <script type="text/javascript" src="/assets/js/scripts.js"></script>                
+        
 	</body>
 </html>

@@ -17,7 +17,7 @@
             <ul class="navigation-bar navigation-bar-right">
                 <li><a href="/">Home</a></li>
                 <li ><a href="/sp/blog">Blog</a></li>
-                <li><a href="register.html">Login</a></li>
+                <!--li><a href="/sp/register">Login</a></li-->
                 <li class="active-main"><a href="/sp/register">Sign up</a></li>
             </ul>              
         </div>
@@ -27,58 +27,37 @@
 {{#content "main"}}    
 <div id="hero" class="static-header light">
     <div class="text-heading">
-        <h1>Start Your <span class="highlight">30-Day</span> Free Trial</h1>
-        <p>Stop pirates from stealing your products and <span>increase sales now!</span></p>
+        <h1>Be a Leader. Join our Beta program.</h1>        
+        <p>Specky is under active Development. Leave us your email and we will send you your <span class="highlight">personal invite</span> as soon as its ready!</p>
     </div>
-
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                 <form class="form form-register dark" id="registration" method="post" action="signup.php">
                     <div class="form-group">
-                        <label for="fullname" class="col-sm-3 col-xs-12 control-label">Full name</label>
+                        <label for="fullname" class="col-sm-3 col-xs-12 control-label">Name</label>
                         <div class="col-sm-9 col-xs-12">
-                            <input type="text" class="form-control required" name="fullname" id="fullname" placeholder="">
+                            <input type="text" class="form-control required" name="name" id="fullname" placeholder="">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="website" class="col-sm-3 col-xs-12 control-label">Site address</label>
-                        <div class="col-sm-9 col-xs-12">
-                            <input type="text" class="form-control" name="website" id="website" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="col-sm-3 col-xs-12 control-label">Email address</label>
+                        <label for="email" class="col-sm-3 col-xs-12 control-label">Email</label>
                         <div class="col-sm-9 col-xs-12">
                             <input type="email" class="form-control required email" name="email" id="email" placeholder="">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="col-sm-3 col-xs-12 control-label">Password</label>
-                        <div class="col-sm-9 col-xs-12">
-                            <input type="password" class="form-control required" name="password" id="password" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="confirmPassword" class="col-sm-3 col-xs-12 control-label">Password</label>
-                        <div class="col-sm-9 col-xs-12">
-                            <input type="password" class="form-control required" name="confirmPassword" id="confirmPassword" placeholder="">
-                        </div>
-                    </div>
+                    </div>   
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" name="newsletter" value="1"> Submit to the monthly newsletter
+                                    <input type="checkbox" name="newsletter" value="1">Would you like to subscribe to our newsletter?
                                 </label>
                             </div>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg btn-block">Get started</button>
                 </form>
-
-                <p class="agree-text">By clicking you agree to our Terms of Service, Privacy Policy & Refund Policy.<br />
-                    I have a referral code I'd like to enter</p>
+                <p class="agree-text">By clicking you agree to our Terms of Service, Privacy Policy & Refund Policy.</p>
             </div>
         </div>
     </div>

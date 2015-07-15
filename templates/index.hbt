@@ -24,7 +24,7 @@
             <ul class="navigation-bar navigation-bar-right">
                 <li class="active-main"><a href="/">Home</a></li>
                 <li><a href="/sp/blog">Blog</a></li>
-                <li><a href="/sp/register">Login</a></li>
+                <!--li><a href="/sp/register">Login</a></li-->
                 <li class="featured"><a href="/sp/register">Sign up</a></li>
             </ul>  
         </div>
@@ -41,7 +41,8 @@
         <p class="animated hiding" data-animation="fadeInDown" data-delay="500">improve candidate response rates and increase passive candidate engagement<p>
         <p class="animated hiding" data-animation="fadeInDown" data-delay="500">answer questions that help candidates make the correct career decision<p>        
         <ul class="list-inline">
-            <li><a href="register.html" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">Get Started for Free</a></li>            
+            <!--li><a href="register.html" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">Get Started for Free</a></li-->
+            <li><a href="/sp/reregister" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">Join our Beta Program for Free</a></li>
         </ul>
     </div>
     <div class="video-wrapper">

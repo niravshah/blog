@@ -23,7 +23,7 @@
             <ul class="navigation-bar navigation-bar-right">
                 <li><a href="/">Home</a></li>
                 <li class="active"><a href="/sp/blog">Blog</a></li>
-                <li><a href="/sp/register">Login</a></li>
+                <!--li><a href="/sp/register">Login</a></li-->
                 <li class="featured"><a href="/sp/register">Sign up</a></li>
             </ul>  
         </div>
