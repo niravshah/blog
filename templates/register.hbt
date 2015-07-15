@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                <form class="form form-register dark" id="registration" method="post" action="signup.php">
+                <div class="form form-register dark" id="registration">
                     <div class="form-group">
                         <label for="fullname" class="col-sm-3 col-xs-12 control-label">Name</label>
                         <div class="col-sm-9 col-xs-12">
@@ -50,13 +50,13 @@
                         <div class="col-sm-offset-2 col-sm-10">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" name="newsletter" value="1">Would you like to subscribe to our newsletter?
+                                    <input id="news" type="checkbox" name="newsletter" value="1">Would you like to subscribe to our newsletter?
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Get started</button>
-                </form>
+                    <button id="join" class="btn btn-primary btn-lg btn-block">Join</button>
+                </div>
                 <p class="agree-text">By clicking you agree to our Terms of Service, Privacy Policy & Refund Policy.</p>
             </div>
         </div>

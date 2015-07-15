@@ -126,8 +126,8 @@
                     <li class="active">
                         <a href="#home" data-toggle="tab">
                             <div class="tab-info">
-                                <div class="tab-title">Lorem Dolor</div>
-                                <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div>
+                                <div class="tab-title">Private by Default</div>
+                                <div class="tab-desc">All Specs you create are private and <br/>can only be seen by people you share them with.</div>
                             </div>
                             <!--<div class="tab-icon"><span class="icon icon-multimedia-20"></span></div>-->
                         </a>
@@ -135,7 +135,7 @@
                     <li>
                         <a href="#profile" data-toggle="tab">
                             <div class="tab-info">
-                                <div class="tab-title">Lorem Dolor</div>
+                                <div class="tab-title">Realtime Tracking</div>
                                 <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div>
                             </div>
                             <!--<div class="tab-icon"><span class="icon icon-seo-icons-27"></span></div>-->
@@ -144,7 +144,7 @@
                     <li>
                         <a href="#messages" data-toggle="tab">
                             <div class="tab-info">
-                                <div class="tab-title">Lorem Dolor</div>
+                                <div class="tab-title">Beautiful Effective Emails</div>
                                 <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div>
                             </div>
                             <!-- <div class="tab-icon"><span class="icon icon-seo-icons-28"></span></div>-->
@@ -227,21 +227,18 @@
     <div class="container center">
         <div class="col-sm-12 col-lg-5">
             <article>
-                <h2><strong>GET</strong> LIVE UPDATES</h2>
+                <h2><strong>JOIN</strong> OUR BETA PROGRAM</h2>
                 <p class="thin">No spam promise - only latest news and prices!</p>
             </article>
         </div>
         <div class="col-sm-12 col-lg-7">
-            <form id="subscribe" class="form" action="<?=$_SERVER['PHP_SELF']; ?>" method="post">
+            <div id="subscribe" class="form">
                 <div class="form-group form-inline">
                     <input size="15" type="text" class="form-control required" id="NewsletterName" name="NewsletterName" placeholder="Your name" /> 
                     <input size="25" type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" /> 
-                    <input type="submit" class="btn btn-default" value="SUBSCRIBE" />
-                    <span id="response">
-                        <? require_once('assets/mailchimp/inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?>
-                    </span>
+                    <input type="submit" class="btn btn-default" value="JOIN" />
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </section>
