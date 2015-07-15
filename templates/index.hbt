@@ -131,12 +131,12 @@
                             </div>
                             <!--<div class="tab-icon"><span class="icon icon-multimedia-20"></span></div>-->
                         </a>
-                    </li>
+                    </li>   
                     <li>
                         <a href="#profile" data-toggle="tab">
                             <div class="tab-info">
                                 <div class="tab-title">Realtime Tracking</div>
-                                <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div>
+                                <div class="tab-desc">All Specs you share via Specky are tracked in real time. <br/>We keep you updated on the best time to contact your prospect again. </div>
                             </div>
                             <!--<div class="tab-icon"><span class="icon icon-seo-icons-27"></span></div>-->
                         </a>
@@ -145,7 +145,7 @@
                         <a href="#messages" data-toggle="tab">
                             <div class="tab-info">
                                 <div class="tab-title">Beautiful Effective Emails</div>
-                                <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div>
+                                <div class="tab-desc">Specially designed emails that are designed<br/> to answer candidate questions</div>
                             </div>
                             <!-- <div class="tab-icon"><span class="icon icon-seo-icons-28"></span></div>-->
                         </a>
@@ -227,8 +227,8 @@
     <div class="container center">
         <div class="col-sm-12 col-lg-5">
             <article>
-                <h2><strong>JOIN</strong> OUR BETA PROGRAM</h2>
-                <p class="thin">No spam promise - only latest news and prices!</p>
+                <h2>JOIN OUR <strong>FREE</strong> BETA PROGRAM</h2>
+                <p class="thin">Recieve your special invite when we go Live!</p>
             </article>
         </div>
         <div class="col-sm-12 col-lg-7">
@@ -315,178 +315,18 @@
     </div>
 </section>
 
-<section id="awards" class="section dark">
-    <div class="container">
-        <div class="section-header animated hiding" data-animation="fadeInDown">
-            <h2><span class="highlight">OUR</span> AWARDS</h2>
-            <div class="sub-heading">
-                Lorem ipsum dolor sit atmet sit dolor greand fdanrh s
-                <br />dfs sit atmet sit dolor greand fdanrh sdfs
-            </div>
-        </div>
-        <div class="section-content">                
-            <ul class="list-inline logos">
-                <li><a href="#" target="_blank"><img class="animated hiding" data-animation="fadeInUp" data-delay="0" src="assets/img/logos/award-5.jpg" alt="mashable" /></a></li> 
-                <li><a href="#" target="_blank"><img class="animated hiding" data-animation="fadeInUp" data-delay="400" src="assets/img/logos/award-3.jpg" alt="virgin" /></a></li> 
-                <li><a href="#" target="_blank"><img class="animated hiding" data-animation="fadeInUp" data-delay="600" src="assets/img/logos/award-4.jpg" alt="forbes" /></a></li> 
-                <li><a href="#" target="_blank"><img class="animated hiding" data-animation="fadeInUp" data-delay="800" src="assets/img/logos/award-1.jpg" alt="microsoft" /></a></li> 					
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section id="feedback" class="section light">
-    <div class="container">
-        <div class="section-header animated hiding" data-animation="fadeInDown">
-            <h2>WHAT <span class="highlight">CLIENTS</span> SAY</h2>
-        </div>
-        <div class="section-content">
-            <!-- BEGIN SLIDER CONTENT -->
-            <div class="col-sm-10 col-sm-offset-1">
-                <div class="flexslider testimonials-slider center animated hiding" data-animation="fadeInTop">	
-                    <ul class="slides">
-                        <li>
-                            <div class="testimonial resp-center clearfix">
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi mauris, nec rhoncus dolor consectetur vitae lorem ipsum.
-                                </blockquote>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="testimonial resp-center clearfix">
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi mauris, nec rhoncus dolor consectetur vitae lorem ipsum.
-                                </blockquote>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="testimonial resp-center clearfix">
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non bibendum metus. Aenean vel rutrum velit. Duis aliquet augue non augue volutpat, ut viverra est sagittis. Duis elementum mi mauris, nec rhoncus dolor consectetur vitae lorem ipsum.
-                                </blockquote>
-                            </div>
-                        </li>	
-                    </ul>
-                </div>
-            </div>
-            <!-- END SLIDER -->
-        </div>
-    </div>
-</section>
-
-<section id="feedback-controls" class="section light">
-    <div class="container">
-        <div class="col-md-10 col-md-offset-1">
-            <!-- BEGIN CONTROLS -->
-            <div class="flex-manual">
-                <div class="col-xs-12 col-sm-4 wrap">
-                    <div class="switch flex-active">
-                        <img alt="client" src="assets/img/people/profile-1.jpg" class="sm-pic img-circle pull-left" width="69" height="70">
-                        <p>
-                            <span class="highlight">AMY WARNER</span><br/>Investor at <span class="highlight">Pear Inc.</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 wrap">
-                    <div class="switch pull-left">
-                        <img alt="client" src="assets/img/people/profile-2.jpg" class="sm-pic img-circle pull-left" width="69" height="70">
-                        <p>
-                            <span class="highlight">JOHN DOESOME</span><br/>Accountant at <span class="highlight">Vell Inc.</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 wrap">
-                    <div class="switch">
-                        <img alt="client" src="assets/img/people/profile-1.jpg" class="sm-pic img-circle pull-left" width="68" height="69">
-                        <p>
-                            <span class="highlight">PETER MOOSOME</span><br/>VP Marketing at <span class="highlight">Footbook</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- END CONTROLS -->
-        </div>
-    </div>
-</section>
-
-<section id="team" class="section dark">
-    <div class="container">
-        <div class="section-header animated hiding" data-animation="fadeInDown">
-            <h2>BEHIND <span class="highlight">THE</span> SCENES</h2>
-            <div class="sub-heading">
-                Lorem ipsum dolor sit atmet sit dolor greand fdanrh s
-                <br>dfs sit atmet sit dolor greand fdanrh sdfs
-            </div>
-            <br/>
-            <p>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil<br/> ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae<br/> qui non vident, nihilamane umquam magnum ac cognitione. In his rest gestiret. Sed ipsam inchoavit, nihil ampliusuma.<br/> Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident,<br/> nihilamane umquam magnum ac cognitione.</p>
-        </div>
-        <div class="section-content row">
-            <div class="member col-md-3 col-sm-3 col-xs-6 animated hiding" data-animation="fadeInDown">
-                <div class="thumb-wrapper">
-                    <div class="overlay img-circle"></div>
-                    <div class="socials">
-                        <a href="#"><span class="icon icon-socialmedia-08"></span></a><a href="#"><span class="icon icon-socialmedia-07"></span></a><a href="#"><span class="icon icon-socialmedia-05"></span></a><a href="#"><span class="icon icon-socialmedia-09"></span></a>
-                    </div>
-                    <img src="assets/img/people/team-1.jpg" class="img-responsive img-circle" alt="thumb" />
-                </div>
-                <span class="h7 highlight">DANIEL DASH</span>
-                <p class="thin">Designer</p>
-            </div>  
-
-            <div class="member col-md-3 col-sm-3 col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="250">
-                <div class="thumb-wrapper">
-                    <div class="overlay img-circle"></div>
-                    <div class="socials">
-                        <a href="#"><span class="icon icon-socialmedia-08"></span></a><a href="#"><span class="icon icon-socialmedia-07"></span></a><a href="#"><span class="icon icon-socialmedia-05"></span></a><a href="#"><span class="icon icon-socialmedia-09"></span></a>
-                    </div>
-                    <img src="assets/img/people/team-4.jpg" class="img-responsive img-circle" alt="thumb" />
-                </div>
-                <span class="h7 highlight">PETRA APPLES</span>
-                <p class="thin">Designer</p>
-            </div>     
-
-            <div class="member col-md-3 col-sm-3 col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="500">
-                <div class="thumb-wrapper">
-                    <div class="overlay img-circle"></div>
-                    <div class="socials">
-                        <a href="#"><span class="icon icon-socialmedia-08"></span></a><a href="#"><span class="icon icon-socialmedia-07"></span></a><a href="#"><span class="icon icon-socialmedia-05"></span></a><a href="#"><span class="icon icon-socialmedia-09"></span></a>
-                    </div>
-                    <img src="assets/img/people/team-3.jpg" class="img-responsive img-circle" alt="thumb" />
-                </div>
-                <span class="h7 highlight">MIKE LYNTON</span>
-                <p class="thin">Designer</p>
-            </div>                        
-
-            <div class="member col-md-3 col-sm-3 col-xs-6 animated hiding" data-animation="fadeInDown" data-delay="750">
-                <div class="thumb-wrapper">
-                    <div class="overlay img-circle"></div>
-                    <div class="socials">
-                        <a href="#"><span class="icon icon-socialmedia-08"></span></a><a href="#"><span class="icon icon-socialmedia-07"></span></a><a href="#"><span class="icon icon-socialmedia-05"></span></a><a href="#"><span class="icon icon-socialmedia-09"></span></a>
-                    </div>
-                    <img src="assets/img/people/team-2.jpg" class="img-responsive img-circle" alt="thumb" />
-                </div>
-                <span class="h7 highlight">AMY PIERS</span>
-                <p class="thin">Designer</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
 <section id="guarantee" class="long-block light">
     <div class="container">
         <div class="col-md-12 col-lg-9">
             <i class="icon icon-seo-icons-24 pull-left"></i>
             <article class="pull-left">
-                <h2><strong>LAUNCH</strong> YOUR STARTUP NOW!</h2>
-                <p class="thin">In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.</p>
+                <h2>JOIN OUR <strong>FREE</strong> BETA PROGRAM</h2>
+                <p class="thin">Recieve your special invite when we go Live!</p>
             </article>
         </div>
 
         <div class="col-md-12 col-lg-3">
-            <a href="http://themeforest.net/item/startuply-responsive-multipurpose-landing-page/7953388" class="btn btn-default">Get this template</a>
+            <a href="/sp/register" class="btn btn-default">Join Specky</a>
         </div>
     </div>
 </section>
