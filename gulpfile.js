@@ -8,7 +8,9 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     runSequence = require('run-sequence'),
     s3 = require('gulp-s3-upload'),
-    path = require('path');
+    path = require('path'),
+    minifyCss = require('gulp-minify-css'),
+    uglify = require('gulp-uglify');
 
 // Metalsmith related
 var gulpsmith = require('gulpsmith'),
@@ -17,6 +19,7 @@ var gulpsmith = require('gulpsmith'),
     permalinks = require('metalsmith-permalinks'),
     collections = require('metalsmith-collections'),
     fs = require('fs');
+   
 
 var handlebars = require('handlebars'),
     layouts = require('handlebars-layouts');
@@ -37,7 +40,7 @@ gulp.task('default', function (cb) {
 gulp.task('connect', function() {
     connect.server({
         root: './build',
-        port: 4000,
+        port: 5000,
         livereload: false
     });
 });
@@ -70,7 +73,7 @@ gulp.task('metalsmith', function() {
 });
 
 
-gulp.task('copyStatic', ['metalsmith'], function() {
+gulp.task('copyStatic', ['metalsmith','javascript-compress','minify-css'], function() {
     gulp.src("./assets/**")
         .pipe(gulp.dest("./build/assets"))
         .pipe(connect.reload());
@@ -80,4 +83,16 @@ gulp.task('copyStatic', ['metalsmith'], function() {
 gulp.task('clean', function() {    
     return gulp.src('./build', {read: false})
         .pipe(clean());
+});
+
+gulp.task('javascript-compress', function() {
+  return gulp.src('./jssrc/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/assets/js'));
+});
+
+gulp.task('minify-css', function() {
+  return gulp.src('./csssrc/*.css')
+    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(gulp.dest('./build/assets/css'));
 });
