@@ -10,7 +10,8 @@ var gulp = require('gulp'),
     s3 = require('gulp-s3-upload'),
     path = require('path'),
     minifyCss = require('gulp-minify-css'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    minifyHTML = require('gulp-minify-html');
 
 // Metalsmith related
 var gulpsmith = require('gulpsmith'),
@@ -30,11 +31,9 @@ handlebars.registerHelper("log", function(something) {
   console.log(something);
 });
 
-
-
 // Gulp tasks
 gulp.task('default', function (cb) {
-    runSequence('clean', ['copyStatic','watch'], cb);    
+    runSequence('clean','metalsmith', 'copyStatic', 'javascript-compress','minify-css','copyStatic', 'minify-html','watch',cb);    
 });
 
 gulp.task('connect', function() {
@@ -73,7 +72,7 @@ gulp.task('metalsmith', function() {
 });
 
 
-gulp.task('copyStatic', ['metalsmith','javascript-compress','minify-css'], function() {
+gulp.task('copyStatic', function() {
     gulp.src("./assets/**")
         .pipe(gulp.dest("./build/assets"))
         .pipe(connect.reload());
@@ -95,4 +94,16 @@ gulp.task('minify-css', function() {
   return gulp.src('./csssrc/*.css')
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(gulp.dest('./build/assets/css'));
+});
+
+
+gulp.task('minify-html', function() {
+  var opts = {
+    conditionals: true,
+    spare:true
+  };
+ 
+  return gulp.src('./build/**/*.html')
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest('./build/'));
 });
