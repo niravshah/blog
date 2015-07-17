@@ -8,10 +8,13 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     runSequence = require('run-sequence'),
     s3 = require('gulp-s3-upload'),
-    path = require('path'),
-    minifyCss = require('gulp-minify-css'),
+    path = require('path'),    
+    imageminJpegtran = require('imagemin-jpegtran');
     uglify = require('gulp-uglify'),
-    minifyHTML = require('gulp-minify-html');
+    minifyCss = require('gulp-minify-css'),
+    minifyHTML = require('gulp-minify-html'),
+        imagemin = require('gulp-imagemin'),
+        pngquant = require('imagemin-pngquant');
 
 // Metalsmith related
 var gulpsmith = require('gulpsmith'),
@@ -33,7 +36,7 @@ handlebars.registerHelper("log", function(something) {
 
 // Gulp tasks
 gulp.task('default', function (cb) {
-    runSequence('clean','metalsmith', 'copyStatic', 'javascript-compress','minify-css','copyStatic', 'minify-html','watch',cb);    
+    runSequence('clean','metalsmith', 'copyStatic', 'javascript-compress','minify-css','jpegtran','pngquant','copyStatic', 'minify-html','watch',cb);    
 });
 
 gulp.task('connect', function() {
@@ -106,4 +109,21 @@ gulp.task('minify-html', function() {
   return gulp.src('./build/**/*.html')
     .pipe(minifyHTML(opts))
     .pipe(gulp.dest('./build/'));
+});
+
+
+gulp.task('jpegtran', function () {
+    return gulp.src('./img/**/*.jpg')
+        .pipe(imageminJpegtran({progressive: true})())
+        .pipe(gulp.dest('./build/assets/img'));
+});
+
+gulp.task('pngquant', function () {
+    return gulp.src('./img/**/*.png')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('./build/assets/img'));
 });
