@@ -41,7 +41,9 @@
     "gulp-minify-html": "~1.0.3",
     "uglifycss": "0.0.15",
     "gulp-imagemin": "~2.3.0",
-    "imagemin-pngquant": "~4.1.2"
+    "imagemin-pngquant": "~4.1.2",
+    "critical": "~0.6.0",
+    "gulp-wait": "0.0.2"
   },
   "dependencies": {
     "imagemin-jpegtran": "~4.3.0"

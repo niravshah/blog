@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jonathanepollack/gulp-minify-html.png?branch=master)](https://travis-ci.org/jonathanepollack/gulp-minify-html)
+[![Build Status](https://travis-ci.org/murphydanger/gulp-minify-html.png?branch=master)](https://travis-ci.org/murphydanger/gulp-minify-html)
 ## Information
 
 <table>
