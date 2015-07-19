@@ -7,7 +7,9 @@
 (function() {
         "use strict";
         $(document).ready(function() {
+            if(typeof Parse != 'undefined'){
             Parse.initialize("wLizknDtFC5dTuArjknWvq58fiHLohcBMsF3N79c", "pjmgLhlqWLRklIyIheAfOBJhvQczzXpE8wFxHND4");
+            }
         });
         // Init global DOM elements, functions and arrays
         window.app = {

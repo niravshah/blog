@@ -16,6 +16,9 @@
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-128.png" sizes="128x128" />                
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
+
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -156,8 +159,8 @@ but is also robust enough to handle virtually unlimited traffic with minimal res
                 $script('/assets/js/headhesive.min.js','headhesive');
                 $script.ready(['jquery.nav','jquery.appear','jquery.plugin','jquery.countdown','headhesive'], function() {
                     $script('/assets/js/toastr.min.js','toastr');    
-                    $script('http://www.parsecdn.com/js/parse-1.5.0.min.js','parse');
-                    $script.ready(['toastr','parse'],function(){
+                    //$script('http://www.parsecdn.com/js/parse-1.5.0.min.js','parse');
+                    $script.ready(['toastr'],function(){
                         $script('/assets/js/scripts.js','scripts');
                     });
                 });
