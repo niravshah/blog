@@ -13,9 +13,15 @@
                 $script('/assets/js/headhesive.min.js','headhesive');
                 $script.ready(['jquery.nav','jquery.appear','jquery.plugin','jquery.countdown','headhesive'], function() {
                     $script('/assets/js/toastr.min.js','toastr');    
-                    //$script('http://www.parsecdn.com/js/parse-1.5.0.min.js','parse');
-                    $script.ready(['toastr'],function(){
-                        $script('/assets/js/scripts.js','scripts');
+                    $script('/assets/js/parse-1.5.0.min.js','parse');
+                    $script('/assets/js/scripts.js','scripts');
+                    $script.ready('toastr',function(){
+                        toastr.options = {
+                            "positionClass": "toast-top-full-width"
+                        };
+                    })
+                    $script.ready('parse',function(){
+                        Parse.initialize("wLizknDtFC5dTuArjknWvq58fiHLohcBMsF3N79c", "pjmgLhlqWLRklIyIheAfOBJhvQczzXpE8wFxHND4");
                     });
                 });
             })

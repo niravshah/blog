@@ -6,11 +6,7 @@
  */
 (function() {
         "use strict";
-        $(document).ready(function() {
-            if(typeof Parse != 'undefined'){
-            Parse.initialize("wLizknDtFC5dTuArjknWvq58fiHLohcBMsF3N79c", "pjmgLhlqWLRklIyIheAfOBJhvQczzXpE8wFxHND4");
-            }
-        });
+      
         // Init global DOM elements, functions and arrays
         window.app = {
             el: {},
@@ -118,10 +114,7 @@
             padZeroes: true,
             layout: $('.countdown').html()
         });
-        // Form validation - sign up
-        toastr.options = {
-            "positionClass": "toast-top-full-width"
-        };
+        
 
         $('#join').click(function() {            
             var Prospect = Parse.Object.extend("prospect");

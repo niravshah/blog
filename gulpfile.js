@@ -10,13 +10,13 @@ var gulp = require('gulp'),
     s3 = require('gulp-s3-upload'),
     path = require('path'),
     imageminJpegtran = require('imagemin-jpegtran');
-uglify = require('gulp-uglify'),
-minifyCss = require('gulp-minify-css'),
-minifyHTML = require('gulp-minify-html'),
-imagemin = require('gulp-imagemin'),
-pngquant = require('imagemin-pngquant'),
-wait = require('gulp-wait'),
-critical = require('critical');
+    uglify = require('gulp-uglify'),
+    minifyCss = require('gulp-minify-css'),
+    minifyHTML = require('gulp-minify-html'),
+    imagemin = require('gulp-imagemin'),
+    pngquant = require('imagemin-pngquant'),
+    wait = require('gulp-wait'),
+    critical = require('critical');
 // Metalsmith related
 var gulpsmith = require('gulpsmith'),
     markdown = require('metalsmith-markdown'),
@@ -118,4 +118,16 @@ gulp.task('critical', function() {
             width: 1200
         }]
     });
+});
+
+
+gulp.task('imagemin',function(){
+    
+  return gulp.src('./assets/img/features/app_block_2.png')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('./dist/images'));   
 });
