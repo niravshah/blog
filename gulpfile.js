@@ -24,6 +24,9 @@ var gulpsmith = require('gulpsmith'),
     permalinks = require('metalsmith-permalinks'),
     collections = require('metalsmith-collections'),
     fs = require('fs');
+
+var sitemap = require('gulp-sitemap');
+
 var handlebars = require('handlebars'),
     layouts = require('handlebars-layouts');
 handlebars.registerHelper(layouts(handlebars));
@@ -36,7 +39,7 @@ gulp.task('server', function(cb){
     runSequence('critical','watch',cb);    
 })
 gulp.task('default', function(cb) {
-    runSequence('clean', ['metalsmith', 'copyStatic'], ['javascript-compress', 'minify-css'],'minify-html','watch',cb);
+    runSequence('clean', ['metalsmith', 'copyStatic','sitemap'], ['javascript-compress', 'minify-css'],'minify-html','watch',cb);
 });
 gulp.task('connect', function() {
     connect.server({
@@ -120,14 +123,6 @@ gulp.task('critical', function() {
     });
 });
 
-
-gulp.task('imagemin',function(){
-    
-  return gulp.src('./assets/img/features/app_block_2.png')
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(gulp.dest('./dist/images'));   
+gulp.task('sitemap', function () {
+   gulp.src("./sitemap/sitemap.xml").pipe(gulp.dest("./build"))
 });

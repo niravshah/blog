@@ -81,11 +81,10 @@
 
         <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
         
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all" />
+        
         <link rel="stylesheet" href="/assets/css/font-lineicons.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="/assets/css/animate.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="/assets/css/toastr.min.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>        
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.7/script.min.js"></script>
