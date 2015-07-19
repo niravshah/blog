@@ -85,22 +85,6 @@
         <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>        
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
-        <!--[if lt IE 9]>
-            <script type="text/javascript" src="/assets/js/jquery-1.11.0.min.js?ver=1"></script>
-        <![endif]-->  
-        <!--[if (gte IE 9) | (!IE)]><!-->  
-        <!--script type="text/javascript" src="/assets/js/jquery-2.1.0.min.js?ver=1"></script-->
-        <!--<![endif]-->  
-        <!--script  type="text/javascript" src="/assets/js/bootstrap.min.js"></script>        
-        <script  type="text/javascript" src="/assets/js/jquery.nav.js"></script>
-        <script  type="text/javascript" src="/assets/js/jquery.appear.js"></script>
-        <script  type="text/javascript" src="/assets/js/jquery.plugin.js"></script>
-        <script  type="text/javascript" src="/assets/js/jquery.countdown.js"></script>
-        <script  type="text/javascript" src="/assets/js/toastr.min.js"></script>
-        <script  type="text/javascript" src="/assets/js/headhesive.min.js"></script>
-        <script  type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
-        <script  type="text/javascript" src="/assets/js/scripts.js"></script-->                
-        
         <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.7/script.min.js"></script>
         <script type="text/javascript">
             $script('/assets/js/jquery-2.1.0.min.js?ver=1', 'jquery');
@@ -114,14 +98,12 @@
                 $script('/assets/js/headhesive.min.js','headhesive');
                 $script.ready(['jquery.nav','jquery.appear','jquery.plugin','jquery.countdown','headhesive'], function() {
                     $script('/assets/js/toastr.min.js','toastr');    
-                    $script.ready('toastr',function(){
+                    $script('http://www.parsecdn.com/js/parse-1.5.0.min.js','parse');
+                    $script.ready(['toastr','parse'],function(){
                         $script('/assets/js/scripts.js','scripts');
-                        $script('http://www.parsecdn.com/js/parse-1.5.0.min.js','parse');
                     });
                 });
             })
         </script>
-            
-        
 	</body>
 </html>
