@@ -124,5 +124,5 @@ gulp.task('critical', function() {
 });
 
 gulp.task('sitemap', function () {
-   gulp.src("./sitemap/sitemap.xml").pipe(gulp.dest("./build"))
+   gulp.src("./sitemap/*.*").pipe(gulp.dest("./build"))
 });
