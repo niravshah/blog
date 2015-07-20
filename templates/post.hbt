@@ -52,8 +52,17 @@
                 </p>
             </article>
         </div>
-        <div class="col-md-4 well hidden-xs">
-        </div>
+       <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'specky';
+            var disqus_identifier = '/post/' + '{{{this.link}}}' ;
+            var disqus_title = '{{{title}}}';            
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
     </div>
 </div>
 </div>
