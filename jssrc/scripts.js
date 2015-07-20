@@ -120,8 +120,8 @@
             var Prospect = Parse.Object.extend("prospect");
             var prospect = new Prospect();            
             var toSend = {};
-            toSend['email'] = $('#email').val();
-            toSend['name'] = $('#fullname').val();
+            toSend['email'] = $('#NewsletterEmail').val();
+            toSend['name'] = $('#NewsletterName').val();
             toSend['newsletter'] = $('#news').val();
             
             prospect.save(toSend).then(function(object) {
