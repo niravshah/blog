@@ -43,8 +43,8 @@
   transition-property: opacity; }
 
 .twentytwenty-before-label:before, .twentytwenty-after-label:before {
-  color: white;
-  font-size: 13px;
+  color: red;
+  font-size: 16px;
   letter-spacing: 0.1em; }
 
 .twentytwenty-before-label:before, .twentytwenty-after-label:before {
@@ -108,12 +108,12 @@
 .twentytwenty-before-label {
   opacity: 0; }
   .twentytwenty-before-label:before {
-    content: "Before"; }
+    content: "Before Specky"; }
 
 .twentytwenty-after-label {
   opacity: 0; }
   .twentytwenty-after-label:before {
-    content: "After"; }
+    content: "After Specky"; }
 
 .twentytwenty-horizontal .twentytwenty-before-label:before {
   left: 10px; }
