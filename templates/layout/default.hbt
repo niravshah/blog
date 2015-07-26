@@ -102,8 +102,8 @@
                 $script.ready(['jquery.nav','jquery.appear','jquery.plugin','jquery.countdown','headhesive'], function() {
                     $script('/assets/js/toastr.min.js','toastr');    
                     $script('/assets/js/parse-1.5.0.min.js','parse');
+                    $script('/assets/js/jquery.event.move.js', 'jquery.event');  
                     $script('/assets/js/jquery.twentytwenty.js', 'jquery.twentytwenty');
-                    $script('/assets/js/jquery.event.move.js', 'jquery.event');
                     $script('/assets/js/scripts.js','scripts');
                     $script.ready('toastr',function(){
                         toastr.options = {
@@ -113,6 +113,13 @@
                     $script.ready('parse',function(){
                         Parse.initialize("wLizknDtFC5dTuArjknWvq58fiHLohcBMsF3N79c", "pjmgLhlqWLRklIyIheAfOBJhvQczzXpE8wFxHND4");
                     });
+                    $script.ready(['jquery.event','jquery.twentytwenty'],function(){
+                      $(window).load(function(){
+                        $(".twentytwenty-container").twentytwenty({
+                          default_offset_pct: 0.4
+                        });
+                      });
+                    });                  
                 });
             })
         </script>

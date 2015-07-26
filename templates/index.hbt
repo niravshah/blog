@@ -44,13 +44,14 @@
         <ul class="list-inline">
             <!--li><a href="register.html" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">Get Started for Free</a></li-->
             <li><a href="/sp/register" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">TRY FOR FREE</a></li>
-        </ul>
+        </ul>  
     </div>
-    <div class="video-wrapper">
-        <div class="container">
-            <img src="assets/img/features/app_block.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="500" />
-            <img src="assets/img/features/app_block_doc.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="1000" />
-        </div>
+    <div class="twentytwenty-container">  
+      <!--img src="assets/img/features/app_block_doc.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="1000" />
+      <img src="assets/img/features/app_block.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="500" /-->
+      <img src="assets/img/features/app_block_doc.png" alt="before image"/>
+      <img src="assets/img/features/app_block.png" alt="after image"/>
+
     </div>
 </div>
 <a id="showHere"></a>

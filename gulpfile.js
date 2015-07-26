@@ -39,7 +39,7 @@ gulp.task('server', function(cb){
     runSequence('critical','watch',cb);    
 })
 gulp.task('default', function(cb) {
-    runSequence('clean', ['metalsmith', 'copyStatic','sitemap'], ['minify-js','minify-css'],'minify-html','watch',cb);
+    runSequence('clean', ['metalsmith', 'copyStatic','sitemap'], ['minify-js','minify-css'],'minify-html','connect',cb);
 });
 gulp.task('connect', function() {
     connect.server({
