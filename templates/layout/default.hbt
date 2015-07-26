@@ -18,6 +18,7 @@
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-128.png" sizes="128x128" />                
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="/assets/css/twentytwenty.css" type="text/css" media="screen" />
 
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -101,6 +102,8 @@
                 $script.ready(['jquery.nav','jquery.appear','jquery.plugin','jquery.countdown','headhesive'], function() {
                     $script('/assets/js/toastr.min.js','toastr');    
                     $script('/assets/js/parse-1.5.0.min.js','parse');
+                    $script('/assets/js/jquery.twentytwenty.js', 'jquery.twentytwenty');
+                    $script('/assets/js/jquery.event.move.js', 'jquery.event');
                     $script('/assets/js/scripts.js','scripts');
                     $script.ready('toastr',function(){
                         toastr.options = {

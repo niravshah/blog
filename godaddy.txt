@@ -1,1 +1,6 @@
 ssh niravshah@160.153.57.100
+
+/home/niravshah/public_html
+
+cd buil
+scp -r . niravshah@160.153.57.100:/home/niravshah/public_html/

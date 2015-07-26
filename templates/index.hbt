@@ -48,11 +48,12 @@
     </div>
     <div class="video-wrapper">
         <div class="container">
-            <img src="assets/img/features/app_block_2.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="1000" />
+            <img src="assets/img/features/app_block.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="500" />
+            <img src="assets/img/features/app_block_doc.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="1000" />
         </div>
     </div>
 </div>
-<a id="showHere"></a>    
+<a id="showHere"></a>
 <section id="features" class="section">
     <div class="container">
         <div class="section-header animated hiding" data-animation="fadeInDown">

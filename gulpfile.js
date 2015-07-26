@@ -39,7 +39,7 @@ gulp.task('server', function(cb){
     runSequence('critical','watch',cb);    
 })
 gulp.task('default', function(cb) {
-    runSequence('clean', ['metalsmith', 'copyStatic','sitemap'], ['javascript-compress', 'minify-css'],'minify-html','watch',cb);
+    runSequence('clean', ['metalsmith', 'copyStatic','sitemap'], ['minify-js','minify-css'],'minify-html','watch',cb);
 });
 gulp.task('connect', function() {
     connect.server({
@@ -77,7 +77,7 @@ gulp.task('clean', function() {
         read: false
     }).pipe(clean());
 });
-gulp.task('javascript-compress', function() {
+gulp.task('minify-js', function() {
     return gulp.src('./jssrc/*.js').pipe(uglify()).pipe(gulp.dest('./build/assets/js'));
 });
 gulp.task('minify-css', function() {
