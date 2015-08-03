@@ -39,19 +39,15 @@
 <div id="hero" class="static-header light clearfix">
     <div class="text-heading">
         <h1 class="animated hiding" data-animation="bounceInDown" data-delay="0"><span class="highlight">Intelligent</span> Job Specifications</h1>
-        <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="500">improve candidate response rates and increase passive candidate engagement<p>
-        <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="500">answer questions that help candidates make the correct career decision<p>        
+        <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="200">improve candidate response rates and increase passive candidate engagement<p>
+        <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="300">answer questions that help candidates make the correct career decision<p>        
         <ul class="list-inline">
-            <!--li><a href="register.html" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">Get Started for Free</a></li-->
-            <li><a href="/sp/register" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">TRY FOR FREE</a></li>
+            <li><a href="/sp/register" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="400">TRY FOR FREE</a></li>
         </ul>  
     </div>
     <div class="twentytwenty-container">  
-      <!--img src="assets/img/features/app_block_doc.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="1000" />
-      <img src="assets/img/features/app_block.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="500" /-->
       <img src="assets/img/features/app_block_doc.png" alt="before image"/>
       <img src="assets/img/features/app_block.png" alt="after image"/>
-
     </div>
 </div>
 <a id="showHere"></a>
@@ -69,13 +65,13 @@
                 </article>                
             </div>
             <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
-                <img src="assets/img/features/people.jpg" class="img-responsive" alt="process 3" />
+                <img src="assets/img/features/rich_features_5.png" class="img-responsive" alt="process 3" />
             </div>
         </div>
         <hr class="clearfix" />
         <div class="section-content row">                
             <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">                                
-                <img src="assets/img/features/content_image1.png" class="img-responsive" alt="process 2" />
+                <img src="assets/img/features/rich_features_6.png" class="img-responsive" alt="process 2" />
             </div>
             <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
                 <br/><br/>
@@ -140,15 +136,12 @@
                 <div class="tab-content animated hiding hitw" data-animation="fadeInLeft">
                     <div class="tab-pane in active" id="home">                        
                         <img src="assets/img/features/rich_features_1.png" class="img-responsive animated hiding" data-animation="fadeInLeft" alt="macbook" />
-                        <!--p class="hidden-xs"><span>All Specs you send Specky are by Private by default.<br/>Live Specs are only visible to those you share them with.<br/> Keeping your business oppurtunity confidential is our top priority.</span></p-->
                     </div>
                     <div class="tab-pane" id="profile">
-                        <img src="assets/img/features/rich_features_2.png" class="img-responsive animated hiding" data-animation="fadeInLeft" alt="macbook"/>
-                        <!--p class="hidden-xs"><span>All Specs you send Specky are by Private by default.<br/>Live Specs are only visible to those you share them with.<br/> Keeping your business oppurtunity confidential is our top priority.</span></p-->
+                        <img src="assets/img/features/rich_features_3.png" class="img-responsive animated hiding" data-animation="fadeInLeft" alt="macbook"/>
                     </div>
                     <div class="tab-pane" id="messages">
-                        <img src="assets/img/features/rich_features_3.png" class="img-responsive animated hiding" data-animation="fadeInLeft" alt="macbook"/>
-                        <!--p class="hidden-xs"><span>Specky also tells you the ideal time to reach out to a prospect.<br/>Specky Chat lets you chat live with your online propsects.</span></p-->
+                        <img src="assets/img/features/rich_features_2.png" class="img-responsive animated hiding" data-animation="fadeInLeft" alt="macbook"/>
                     </div>
                 </div>
             </div>

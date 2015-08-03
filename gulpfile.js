@@ -39,7 +39,7 @@ gulp.task('server', function(cb){
     runSequence('critical','watch',cb);    
 })
 gulp.task('default', function(cb) {
-    runSequence('clean', ['metalsmith', 'copyStatic','sitemap'], ['minify-js','minify-css'],'minify-html','connect',cb);
+   runSequence('clean', ['metalsmith', 'copyStatic','sitemap'], ['minify-js','minify-css'],'minify-html','connect',cb);
 });
 gulp.task('connect', function() {
     connect.server({
@@ -104,7 +104,7 @@ gulp.task('pngquant', function() {
             removeViewBox: false
         }],
         use: [pngquant()]
-    })).pipe(gulp.dest('./build/assets/img'));
+    })).pipe(gulp.dest('./assets/img'));
 });
 gulp.task('critical', function() {
     critical.generate({
