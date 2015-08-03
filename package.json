@@ -45,7 +45,8 @@
     "critical": "~0.6.0",
     "gulp-wait": "0.0.2",
     "gulp-sitemap": "~2.1.1",
-    "penthouse": "~0.3.5"
+    "penthouse": "~0.3.5",
+    "gulp-scp": "0.0.3"
   },
   "dependencies": {
     "imagemin-jpegtran": "~4.3.0"

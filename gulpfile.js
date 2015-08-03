@@ -25,6 +25,8 @@ var gulpsmith = require('gulpsmith'),
     collections = require('metalsmith-collections'),
     fs = require('fs');
 
+var scp = require('gulp-scp');
+
 var sitemap = require('gulp-sitemap');
 
 var handlebars = require('handlebars'),
@@ -125,4 +127,14 @@ gulp.task('critical', function() {
 
 gulp.task('sitemap', function () {
    gulp.src("./sitemap/*.*").pipe(gulp.dest("./build"))
+});
+
+gulp.task('scp', function () {
+    gulp.src('build/**/*.*')
+        .pipe(scp({
+            host: '160.153.57.100',
+            user: 'niravshah',
+            port: 22,
+            path: '/home/niravshah/public_html/**/*.*'
+        }));
 });
