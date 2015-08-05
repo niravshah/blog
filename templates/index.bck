@@ -74,12 +74,12 @@
             <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">                                
                 <img src="assets/img/features/rich_features_5.png" class="img-responsive" alt="process 2" />
             </div>
-            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">                
+            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+                <br/><br/>
                 <article>
-                    <h3 style="margin-top:0px;"><span class="highlight">COMMUNICATE </span><br/>EFFICIENTLY</h3>
-                    <div class="sub-title">Specky automates the process of sharing job specs, tracking and recording key analytics at each point in the process.</div>
-                    <p>The conventional method of sharing stacks of MS Word job specs with prospects over email in exchange of resume documents is laborious, cumbersome and inefficient. 
-                      Specky automates and optimizes this channel to make it extremely effective. It communicates on your behalf using specially designed mobile-friendly emails that are geared to provide key insights and have a candidate click through to the spec.</p>
+                    <h3>ENGAGE MORE <br/><span class="highlight">PASSIVE CANDIDATES</span></h3>
+                    <div class="sub-title">Help hire the absolute best person for the job and not the best person who is available.</div>
+                    <p>Share insights that get more passive candidates interested in talking further. Improve your quality of hire by getting top people interested in what you have to offer.</p>
                 </article>                                
             </div>
         </div>
@@ -87,9 +87,9 @@
         <div class="section-content row">                
             <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">                
                 <article>
-                    <h3 style="margin-top:0px;">ANSWER CAREER QUESTIONS<br/><span class="highlight"> BUIL A RECRUITER BRAND</span></h3>
-                    <div class="sub-title">Specky helps you build a reliable Career Advisor recruiter brand by answering prospect questions.</div>
-                    <p>As a recruiter you have you always have a finger on the pulse of the ever changing job markets. Specky lets you now use that knowledge to help candidates resolve doubts about the organization culture, team and also brush up on their skills, structure their resumes and make successful career progression. In return, letting you build a strong public brand and a reputation for yourself that stays with you as you progress through your career.</p>
+                    <h3>BUILD A HELPFUL<br/><span class="highlight">RECRUITER BRAND</span></h3>
+                    <div class="sub-title">Become a Career Advisor. Not Just a Head Hunter.</div>
+                    <p>As a recruiter you have you always have a finger on the pulse of the ever changing job markets. Specky lets you now use that knowledge to help candidates brush up on their skills, structure their resumes and make successful career progression. In return, letting you build a strong public brand and a reputation for yourself!</p>
                 </article>                
             </div>
             <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
