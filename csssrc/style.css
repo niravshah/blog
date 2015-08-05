@@ -748,7 +748,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
     	.revo #main-slider .rev-big, .revo #main-slider .rev-normal { display: none; }
 	.static-header, #newsletter, #feedback, .footer { background-size: auto !important; background-size: auto !important; background-position: top center; background-attachment: scroll !important;}
 
-	#landing-page .static-header { min-height: 450px; }
+	#landing-page .static-header { min-height: 525px; }
 	#color-landing-page .static-header { min-height: 570px; }
 	.video-version .text-heading { padding-top: 35%; } 
 	#register-page .text-heading { padding-top: 65px; }

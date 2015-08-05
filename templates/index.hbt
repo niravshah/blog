@@ -58,7 +58,10 @@
             <h2><span class="highlight">WHY SPECKY?</span></h2>
             <p>At Specky, we want to improve the quality of communication between recruiters and candidates. By making this dialog more effective, we want to help reduce the number of candidates you reach out per-hire, help engage more high quality passive prospects and find the best candidate for the job.</p>
         </div>                        
-        <div class="section-content row" style="margin-top:10px;">                
+        <div class="section-content row" style="margin-top:10px;">
+           <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight" style="margin-bottom:20px;">
+                <img src="assets/img/features/rich_features_6.png" class="img-responsive" alt="process 3" />
+            </div>          
             <div class="col-sm-6  animated hiding" data-animation="fadeInLeft">                                
                 <article>
                   <h3 style="margin-top:0px;"><span class="highlight">SHARE INSIGHTS THAT</span><br/>AID KEY CAREER DECISIONS</h3>
@@ -67,13 +70,10 @@
                     <span class="highlight">Specky</span> helps you use your industry know-how to curate and annotate job specs in an extremely easy and effective way to get more high quality candidates interested in your opening.</p>
                 </article>                
             </div>
-            <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight" style="margin-bottom:20px;">
-                <img src="assets/img/features/rich_features_6.png" class="img-responsive" alt="process 3" />
-            </div>
         </div>
         <hr class="clearfix" />
         <div class="section-content row" style="margin-top:10px;">                
-            <div class="col-sm-6  animated hiding" data-animation="fadeInLeft">                                
+            <div class="col-sm-6  animated hiding" data-animation="fadeInLeft" style="margin-bottom:20px;">                                
                 <img src="assets/img/features/rich_features_5.png" class="img-responsive" alt="process 2" />
             </div>
             <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">                
@@ -86,7 +86,10 @@
             </div>
         </div>
         <hr class="clearfix" />
-        <div class="section-content row" style="margin-top:10px;">                
+        <div class="section-content row" style="margin-top:10px;">           
+            <div class="col-sm-6  pull-right animated hiding" data-animation="fadeInRight" style="margin-bottom:20px;">
+                <img src="assets/img/features/rich_features_7.png" class="img-responsive pull-right" alt="process 2" />
+            </div>          
             <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">                
                 <article>
                     <h3 style="margin-top:0px;">ANSWER CAREER QUESTIONS<br/><span class="highlight"> BUILD A RECRUITER BRAND</span></h3>
@@ -94,9 +97,6 @@
                     <p>As a recruiter you have you always have a finger on the pulse of the ever changing job markets. 
                     <span class="highlight">Specky</span> lets you now use that knowledge to help candidates resolve doubts about the organization culture, team and also brush up on their skills, structure their resumes and make successful career progression. In return, letting you build a strong public brand and a reputation for yourself that stays with you as you progress through your career.</p>
                 </article>                
-            </div>
-            <div class="col-sm-6  pull-right animated hiding" data-animation="fadeInRight">
-                <img src="assets/img/features/phone.jpg" class="img-responsive pull-right" alt="process 2" />
             </div>
         </div>        
     </div>
