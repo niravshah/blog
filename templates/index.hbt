@@ -40,15 +40,16 @@
     <div class="text-heading">
         <h1 class="animated hiding" data-animation="bounceInDown" data-delay="0"><span class="highlight">Intelligent</span> Job Specifications</h1>
         <p class="animated hiding" data-animation="fadeInDown" data-delay="200">improve candidate response rates and increase passive candidate engagement<p>
-        <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="300">answer questions that help candidates make the correct career decision<p>        
+        <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="300">answer questions that help candidates make the correct career decision<p>                   
         <ul class="list-inline">
             <li><a href="/sp/register" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="400">TRY FOR FREE</a></li>
         </ul>  
     </div>
-    <div class="twentytwenty-container">  
-      <img src="assets/img/features/app_block_doc.png" alt="before image"/>
-      <img src="assets/img/features/app_block.png" alt="after image"/>
-    </div>
+    <div class="video-wrapper">
+      <div class="container">
+        <img src="assets/img/features/app_block.png" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" data-delay="800" />
+      </div>
+    </div>     
 </div>
 <a id="showHere"></a>
 <section id="features" class="section">
@@ -57,48 +58,50 @@
             <h2><span class="highlight">WHY SPECKY?</span></h2>
             <p>At Specky, we want to improve the quality of communication between recruiters and candidates. By making this dialog more effective, we want to help reduce the number of candidates you reach out per-hire, help engage more high quality passive prospects and find the best candidate for the job.</p>
         </div>                        
-        <div class="section-content row">                
-            <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">                                
+        <div class="section-content row" style="margin-top:10px;">                
+            <div class="col-sm-6  animated hiding" data-animation="fadeInLeft">                                
                 <article>
                   <h3 style="margin-top:0px;"><span class="highlight">SHARE INSIGHTS THAT</span><br/>AID KEY CAREER DECISIONS</h3>
                     <div class="sub-title">Share information about the location, team culture, career prospects and hiring organization to peak a prospects interest.</div>
-                    <p>Traditional Job Specs give a great overview of the role and skills required for the job, but they dont answer career, organization and culture related questions that candidates have at the onset. But you can. Specky helps you use your industry know-how to curate and annotate job specs in an extremely easy and effective way to get more high quality candidates interested in your opening.</p>
+                    <p>Traditional Job Specs give a great overview of the role and skills required for the job, but they dont answer career, organization or culture related questions that candidates have at the onset.
+                    <span class="highlight">Specky</span> helps you use your industry know-how to curate and annotate job specs in an extremely easy and effective way to get more high quality candidates interested in your opening.</p>
                 </article>                
             </div>
-            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+            <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight" style="margin-bottom:20px;">
                 <img src="assets/img/features/rich_features_6.png" class="img-responsive" alt="process 3" />
             </div>
         </div>
         <hr class="clearfix" />
-        <div class="section-content row">                
-            <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">                                
+        <div class="section-content row" style="margin-top:10px;">                
+            <div class="col-sm-6  animated hiding" data-animation="fadeInLeft">                                
                 <img src="assets/img/features/rich_features_5.png" class="img-responsive" alt="process 2" />
             </div>
-            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">                
+            <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">                
                 <article>
                     <h3 style="margin-top:0px;"><span class="highlight">COMMUNICATE </span><br/>EFFICIENTLY</h3>
                     <div class="sub-title">Specky automates the process of sharing job specs, tracking and recording key analytics at each point in the process.</div>
                     <p>The conventional method of sharing stacks of MS Word job specs with prospects over email in exchange of resume documents is laborious, cumbersome and inefficient. 
-                      Specky automates and optimizes this channel to make it extremely effective. It communicates on your behalf using specially designed mobile-friendly emails that are geared to provide key insights and have a candidate click through to the spec.</p>
+                    <span class="highlight">Specky</span> automates and optimizes this channel to make it extremely effective. It communicates on your behalf using specially designed mobile-friendly emails that are geared to provide key insights and have a candidate click through to the spec.</p>
                 </article>                                
             </div>
         </div>
         <hr class="clearfix" />
-        <div class="section-content row">                
-            <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">                
+        <div class="section-content row" style="margin-top:10px;">                
+            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">                
                 <article>
-                    <h3 style="margin-top:0px;">ANSWER CAREER QUESTIONS<br/><span class="highlight"> BUIL A RECRUITER BRAND</span></h3>
+                    <h3 style="margin-top:0px;">ANSWER CAREER QUESTIONS<br/><span class="highlight"> BUILD A RECRUITER BRAND</span></h3>
                     <div class="sub-title">Specky helps you build a reliable Career Advisor recruiter brand by answering prospect questions.</div>
-                    <p>As a recruiter you have you always have a finger on the pulse of the ever changing job markets. Specky lets you now use that knowledge to help candidates resolve doubts about the organization culture, team and also brush up on their skills, structure their resumes and make successful career progression. In return, letting you build a strong public brand and a reputation for yourself that stays with you as you progress through your career.</p>
+                    <p>As a recruiter you have you always have a finger on the pulse of the ever changing job markets. 
+                    <span class="highlight">Specky</span> lets you now use that knowledge to help candidates resolve doubts about the organization culture, team and also brush up on their skills, structure their resumes and make successful career progression. In return, letting you build a strong public brand and a reputation for yourself that stays with you as you progress through your career.</p>
                 </article>                
             </div>
-            <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+            <div class="col-sm-6  pull-right animated hiding" data-animation="fadeInRight">
                 <img src="assets/img/features/phone.jpg" class="img-responsive pull-right" alt="process 2" />
             </div>
         </div>        
     </div>
 </section>         
-
+  
 <section id="how-it-works" class="section inverted" id="how-it-works">
     <div class="container">
         <div class="section-header animated hiding" data-animation="fadeInDown">
@@ -111,7 +114,7 @@
                         <a href="#home" data-toggle="tab">
                             <div class="tab-info">
                                 <div class="tab-title">STEP 1 - UPLOAD OR EMAIL YOUR SPEC</div>
-                                <div class="tab-desc">Getting Specs into Specky is easy! You can email or upload your existing specs to Specky.</div>
+                                <div class="tab-desc">You can email or upload your existing specs to Specky.</div>
                             </div>
                             
                         </a>
@@ -120,7 +123,7 @@
                         <a href="#profile" data-toggle="tab">
                             <div class="tab-info">
                                 <div class="tab-title">STEP 2 - CURATE YOUR SPEC</div>
-                                <div class="tab-desc">Use your expertise and kowledge to make the job specs more meaningful to your prospects and help them make the crucial career decision.</div>
+                                <div class="tab-desc">Use your expertise and kowledge to make the job specs more meaningful</div>
                             </div>                            
                         </a>
                     </li>
@@ -297,6 +300,21 @@
         </div>
     </div>
 </section>
-</div>
+<section id="before-after" class="section dark" style="background:#f0f0f0;min-height:40px;">
+    <div class="container animated hiding" data-animation="fadeInDown">
+        <div class="section-header animated hiding" data-animation="fadeInDown" style="margin-top:10px;margin-bottom:10px;">
+            <h2><span class="highlight">BEFORE/AFTER</span></h2>
+             <div class="sub-heading">
+               Slide the below Slider to see the impact Specky can make
+            </div>
+        </div>                
+        <div class="col-md-12 col-sm-12 col-xs-12">  
+        <div class="twentytwenty-container">       
+          <img src="assets/img/features/app_block_doc.png" alt="before image"/>
+          <img src="assets/img/features/app_block.png" alt="after image"/>
+        </div>
+      </div>     
+  </div>
+</section>
 {{/content}}
 {{/extend}}

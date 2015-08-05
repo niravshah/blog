@@ -8,17 +8,16 @@
         <meta name="keywords" content="recruting, passive candidates, job specs, job descriptions">
        
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
-		<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+		    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-196x196.png" sizes="196x196" />
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-128.png" sizes="128x128" />                
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="/assets/css/twentytwenty.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />        
 
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -36,7 +35,6 @@
         </header>		
             {{#block "main"}}
             {{/block}}
-		
             <footer id="footer" class="footer light">
                 <div class="container">
                     <div class="footer-content row">
@@ -50,16 +48,8 @@
                         <div class="col-sm-5 social-wrap">
                             <div class="footer-title">Social Networks</div>
                             <ul class="list-inline socials">
-                                <li><a href="#"><span class="icon icon-socialmedia-08"></span></a></li>
-                                <li><a href="#"><span class="icon icon-socialmedia-09"></span></a></li>
-                                <li><a href="#"><span class="icon icon-socialmedia-16"></span></a></li>
-                                <li><a href="#"><span class="icon icon-socialmedia-04"></span></a></li>
-                            </ul>
-                            <ul class="list-inline socials">
-                                <li><a href="#"><span class="icon icon-socialmedia-07"></span></a></li>
-                                <li><a href="#"><span class="icon icon-socialmedia-16"></span></a></li>
-                                <li><a href="#"><span class="icon icon-socialmedia-09"></span></a></li>
-                                <li><a href="#"><span class="icon icon-socialmedia-08"></span></a></li>
+                                <li><a href="#"><span class="icon icon-socialmedia-05"></span></a></li>
+                                <li><a href="#"><span class="icon icon-socialmedia-06"></span></a></li>
                             </ul>
                         </div>
                         <div class="col-sm-3">
