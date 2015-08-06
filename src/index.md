@@ -1,7 +1,7 @@
 ---
 page-title: Home
-title: Specky - Home
+title: Intelligent Job Descriptions
 template: index.hbt
 permalink: false
-page-description: Intelligent Job Descriptions & Specs. Improve candidate engagement by providing candidates the information that helps them make crucial career decisions. 
+page-description: At Specky, we want to help you improve candidate response rates and increase passive candidate engagement by making the traditional Job Description more intelligent. Engage more high quality candidates by providing information that helps candidates make crucial career decisions. 
 ---

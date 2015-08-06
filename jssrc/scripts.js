@@ -118,7 +118,7 @@
       toastr.success('Thank you for signing up.');
       //toastr.error('An error occured. Please try again later.');
     });
-    var speckyUrl = "http://app.specky.co/specky/register";
+    /*var speckyUrl = "http://app.specky.co/specky/register";
     var data = {};
     data['email_address'] = $('#NewsletterEmail').val();
     data['name'] = $('#NewsletterName').val();
@@ -129,6 +129,6 @@
       success: function(data) {
         console.log('Specky Register Success', data)
       }
-    });
+    });*/
   });
 })();

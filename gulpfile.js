@@ -41,7 +41,7 @@ gulp.task('server', function(cb){
     runSequence('critical','watch',cb);    
 })
 gulp.task('default', function(cb) {
-   runSequence('clean', ['metalsmith', 'copyStatic','sitemap'], ['minify-js','minify-css'],'minify-html','connect',cb);
+   runSequence('clean', ['metalsmith', 'copyStatic','sitemap'], ['minify-js','minify-css'],'minify-html','sitemap','connect',cb);
 });
 gulp.task('connect', function() {
     connect.server({
@@ -61,11 +61,8 @@ gulp.task('metalsmith', function() {
         assign(file, file.frontMatter);
         delete file.frontMatter;
     }).pipe(gulpsmith().use(collections({
-        sp: {
-            pattern: 'pages/*.md'
-        },
-        post: {
-            pattern: 'posts/*.md',
+        blog: {
+            pattern: 'blog/*post.md',
             sortBy: 'datetime',
             reverse: true
         }
@@ -94,12 +91,12 @@ gulp.task('minify-html', function() {
     };
     return gulp.src('./build/**/*.html').pipe(minifyHTML(opts)).pipe(gulp.dest('./build/'));
 });
-gulp.task('jpegtran', function() {
+gulp.task('jpg', function() {
     return gulp.src('./img/**/*.jpg').pipe(imageminJpegtran({
         progressive: true
-    })()).pipe(gulp.dest('./build/assets/img'));
+    })()).pipe(gulp.dest('./assets/img'));
 });
-gulp.task('pngquant', function() {
+gulp.task('png', function() {
     return gulp.src('./img/**/*.png').pipe(imagemin({
         progressive: true,
         svgoPlugins: [{

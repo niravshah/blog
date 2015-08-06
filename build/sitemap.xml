@@ -4,34 +4,31 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 <url>
   <loc>http://specky.co/</loc>
-  <lastmod>2015-07-19T10:15:43+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>1.00</priority>
+  <lastmod>2015-08-05T20:48:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://specky.co/sp/blog/</loc>
-  <lastmod>2015-07-19T10:15:44+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <loc>http://specky.co/blog/</loc>
+  <lastmod>2015-08-05T20:48:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://specky.co/sp/register/</loc>
-  <lastmod>2015-07-19T10:15:44+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <loc>http://specky.co/register/</loc>
+  <lastmod>2015-08-05T20:48:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://specky.co/post/second-post/</loc>
-  <lastmod>2015-07-19T10:15:43+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
+  <loc>http://specky.co/blog/second-post/</loc>
+  <lastmod>2015-08-05T20:48:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://specky.co/post/a-new-site/</loc>
-  <lastmod>2015-07-19T10:15:43+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
+  <loc>http://specky.co/blog/a-new-site/</loc>
+  <lastmod>2015-08-05T20:48:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
 </url>
 </urlset>

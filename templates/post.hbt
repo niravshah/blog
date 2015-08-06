@@ -16,15 +16,15 @@
         </div>
         <div class="navigation-navbar">        
             <ul class="navigation-bar navigation-bar-left">
-                <li><a href="/sp/blog">Blog</a></li>
+                <li><a href="/blog">Blog</a></li>
                 <li>></li>
                 <li class="active"><a href="">{{title}}</a></li>
             </ul>            
             <ul class="navigation-bar navigation-bar-right">
                 <li><a href="/">Home</a></li>
-                <li class="active"><a href="/sp/blog">Blog</a></li>
+                <li class="active"><a href="/blog">Blog</a></li>
                 <!--li><a href="/sp/register">Login</a></li-->
-                <li class="featured"><a href="/sp/register">Sign up</a></li>
+                <li class="featured"><a href="/register">Sign up</a></li>
             </ul>  
         </div>
     </div>
@@ -38,7 +38,7 @@
         <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/">Home</a>
             </li>
-            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/sp/blog">Blog</a>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/blog">Blog</a>
             </li>
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active">{{{title}}}</li>
         </ol>        
@@ -66,5 +66,7 @@
     </div>
 </div>
 </div>
+{{/content}}
+{{#content "scripts"}} 
 {{/content}}
 {{/extend}}

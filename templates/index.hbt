@@ -24,9 +24,9 @@
             </ul>            
             <ul class="navigation-bar navigation-bar-right">
                 <li class="active-main"><a href="/">Home</a></li>
-                <li><a href="/sp/blog">Blog</a></li>
+                <li><a href="/blog">Blog</a></li>
                 <!--li><a href="/sp/register">Login</a></li-->
-                <li class="featured"><a href="/sp/register">Sign up</a></li>
+                <li class="featured"><a href="/register">Sign up</a></li>
             </ul>  
         </div>
     </div>
@@ -40,9 +40,9 @@
     <div class="text-heading">
         <h1 class="animated hiding" data-animation="bounceInDown" data-delay="0"><span class="highlight">Intelligent</span> Job Specifications</h1>
         <p class="animated hiding" data-animation="fadeInDown" data-delay="200">improve candidate response rates and increase passive candidate engagement<p>
-        <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="300">answer questions that help candidates make the correct career decision<p>                   
+        <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="300">by answering questions that help candidates make the correct career decision<p>                   
         <ul class="list-inline">
-            <li><a href="/sp/register" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="400">TRY FOR FREE</a></li>
+            <li><a href="/register" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="400">TRY FOR FREE</a></li>
         </ul>  
     </div>
     <div class="video-wrapper">
@@ -56,7 +56,7 @@
     <div class="container">
         <div class="section-header animated hiding" data-animation="fadeInDown">
             <h2><span class="highlight">WHY SPECKY?</span></h2>
-            <p>At Specky, we want to improve the quality of communication between recruiters and candidates. By making this dialog more effective, we want to help reduce the number of candidates you reach out per-hire, help engage more high quality passive prospects and find the best candidate for the job.</p>
+            <p>At Specky, we want to improve the quality of communication between recruiters and candidates.<br/>By making the job description more intelligent, we want to help improve your candidate response rates and help you increase passive candidate engagement.</p>
         </div>                        
         <div class="section-content row" style="margin-top:10px;">
            <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight" style="margin-bottom:20px;">
@@ -64,9 +64,9 @@
             </div>          
             <div class="col-sm-6  animated hiding" data-animation="fadeInLeft">                                
                 <article>
-                  <h3 style="margin-top:0px;"><span class="highlight">SHARE INSIGHTS THAT</span><br/>AID KEY CAREER DECISIONS</h3>
-                    <div class="sub-title">Share information about the location, team culture, career prospects and hiring organization to peak a prospects interest.</div>
-                    <p>Traditional Job Specs give a great overview of the role and skills required for the job, but they dont answer career, organization or culture related questions that candidates have at the onset.
+                  <h3 style="margin-top:0px;"><span class="highlight">IMPROVE </span><br/>CANDIDATE RESPONSE RATES</h3>
+                    <div class="sub-title">Share insights about the career prospects, location, team culture and hiring organization to improve candidate response rates.</div>
+                    <p>Traditional Job Specs give a great overview of the role and skills required for the job, but they don't answer career, organization or culture related questions that candidates have at the onset.
                     <span class="highlight">Specky</span> helps you use your industry know-how to curate and annotate job specs in an extremely easy and effective way to get more high quality candidates interested in your opening.</p>
                 </article>                
             </div>
@@ -93,7 +93,7 @@
             <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">                
                 <article>
                     <h3 style="margin-top:0px;">ANSWER CAREER QUESTIONS<br/><span class="highlight"> BUILD A RECRUITER BRAND</span></h3>
-                    <div class="sub-title">Specky helps you build a reliable Career Advisor recruiter brand by answering prospect questions.</div>
+                    <div class="sub-title">Build your brand and improve Passive Candidate Engagement by answering prospect questions.</div>
                     <p>As a recruiter you have you always have a finger on the pulse of the ever changing job markets. 
                     <span class="highlight">Specky</span> lets you now use that knowledge to help candidates resolve doubts about the organization culture, team and also brush up on their skills, structure their resumes and make successful career progression. In return, letting you build a strong public brand and a reputation for yourself that stays with you as you progress through your career.</p>
                 </article>                
@@ -123,7 +123,7 @@
                         <a href="#profile" data-toggle="tab">
                             <div class="tab-info">
                                 <div class="tab-title">STEP 2 - CURATE YOUR SPEC</div>
-                                <div class="tab-desc">Use your expertise and kowledge to make the job specs more meaningful</div>
+                                <div class="tab-desc">Use your expertise and knowledge to make the job specs more meaningful</div>
                             </div>                            
                         </a>
                     </li>
@@ -197,7 +197,7 @@
             <article class="center">	
                 <i class="icon  icon-graphic-design-13 icon-active"></i>
                 <span class="h7">Easy to Use</span>
-                <p class="thin">Specky is extremely easy and intutive to us! We want you to get busy converting more propsects.</p>
+                <p class="thin">Specky is extremely easy and intuitive to us! We want you to get busy converting more prospects.</p>
             </article>
         </div>             
     </div>
@@ -208,7 +208,7 @@
         <div class="col-sm-12 col-lg-5">
             <article>
                 <h2>JOIN OUR <strong>FREE</strong> BETA PROGRAM</h2>
-                <p class="thin">Recieve your special invite when we go Live!</p>
+                <p class="thin">Receive your special invite when we go Live!</p>
             </article>
         </div>
         <div class="col-sm-12 col-lg-7">
@@ -296,7 +296,7 @@
             </article>
         </div>
         <div class="col-md-12 col-lg-3">
-            <a href="/sp/register" class="btn btn-default">Join Specky</a>
+            <a href="/register" class="btn btn-default">Join Specky</a>
         </div>
     </div>
 </section>
@@ -316,5 +316,7 @@
       </div>     
   </div>
 </section>
+{{/content}}
+{{#content "scripts"}} 
 {{/content}}
 {{/extend}}

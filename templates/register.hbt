@@ -16,9 +16,9 @@
         <div class="navigation-navbar">                                    
             <ul class="navigation-bar navigation-bar-right">
                 <li><a href="/">Home</a></li>
-                <li ><a href="/sp/blog">Blog</a></li>
+                <li ><a href="/blog">Blog</a></li>
                 <!--li><a href="/sp/register">Login</a></li-->
-                <li class="active-main"><a href="/sp/register">Sign up</a></li>
+                <li class="active-main"><a href="/register">Sign up</a></li>
             </ul>              
         </div>
     </div>
@@ -27,8 +27,11 @@
 {{#content "main"}}    
 <div id="hero" class="static-header light">
     <div class="text-heading">
-        <h1>Be a Leader.<br/> Join our Beta Program Free.</h1>
-        <p>Specky is under active Development. Leave us your email and we will send you your <span class="highlight">personal invite</span> as soon as its ready!</p>
+        <h1>Join Now</h1>
+        <br/>
+        <p>Specky is under active Development.<br/> Leave us your email and we will send you your <span class="highlight">personal invite</span> in</p>
+        <h1 id="clock"></h1>
+        <h2>Launching 1st October 2015</h2>
     </div>
     <div class="container">
         <div class="row">
@@ -61,22 +64,26 @@
             </div>
         </div>
     </div>
-
-    <h4>These companies <span>trust us</span></h4>        
+    
+    <!--h4>These companies <span>trust us</span></h4-->        
 </div>
 
 <div id="clients">
     <div class="container">
-        <ul class="list-inline logos">
+      <h3>Increase Candidate Response Rates.<br/>And Improve Passive Candidate Engagement.<br/><br/>Join Now.</h3>
+        <!--ul class="list-inline logos">
             <li><img src="/assets/img/logos/logo-1.png" alt="mashable" /></li>
             <li><img src="/assets/img/logos/logo-2.png" alt="tnw" /></li>
             <li><img src="/assets/img/logos/logo-3.png" alt="virgin" /></li>
             <li><img src="/assets/img/logos/logo-4.png" alt="microsoft" /></li>
             <li><img src="/assets/img/logos/logo-5.png" alt="forbes" /></li>
-        </ul>
+        </ul-->
     </div>
 </div>
 
 <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>    
+{{/content}}
+
+{{#content "scripts"}}
 {{/content}}
 {{/extend}}

@@ -87,7 +87,7 @@
                 $script('/assets/js/jquery.nav.js','jquery.nav');
                 $script('/assets/js/jquery.appear.js','jquery.appear');
                 $script('/assets/js/jquery.plugin.js','jquery.plugin');
-                $script('/assets/js/jquery.countdown.js','jquery.countdown');
+                $script('/assets/js/bower_components/jquery.countdown/dist/jquery.countdown.min.js','jquery.countdown');
                 $script('/assets/js/headhesive.min.js','headhesive');
                 $script.ready(['jquery.nav','jquery.appear','jquery.plugin','jquery.countdown','headhesive'], function() {
                     $script('/assets/js/toastr.min.js','toastr');    
@@ -103,16 +103,22 @@
                     $script.ready('parse',function(){
                         Parse.initialize("wLizknDtFC5dTuArjknWvq58fiHLohcBMsF3N79c", "pjmgLhlqWLRklIyIheAfOBJhvQczzXpE8wFxHND4");
                     });
+                                    
                     $script.ready(['jquery.event','jquery.twentytwenty'],function(){
                       $(window).load(function(){
                         $(".twentytwenty-container").twentytwenty({
                           default_offset_pct: 0.4
                         });
+                        $('#clock').countdown('2015/10/01', function(event) {
+                          $(this).html(event.strftime('%D days %H:%M:%S'));
+                        }); 
                       });
                     });                  
                 });
             })
         </script>
+        {{#block "scripts"}}
+        {{/block}}
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
