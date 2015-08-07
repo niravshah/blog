@@ -29,6 +29,7 @@ var scp = require('gulp-scp');
 
 var sitemap = require('gulp-sitemap');
 
+
 var handlebars = require('handlebars'),
     layouts = require('handlebars-layouts');
 handlebars.registerHelper(layouts(handlebars));
@@ -122,7 +123,7 @@ gulp.task('critical', function() {
     });
 });
 
-gulp.task('sitemap', function () {
+gulp.task('sitemap-copy', function () {
    gulp.src("./sitemap/*.*").pipe(gulp.dest("./build"))
 });
 
@@ -134,4 +135,14 @@ gulp.task('scp', function () {
             port: 22,
             path: '/home/niravshah/public_html/**/*.*'
         }));
+});
+
+gulp.task('sitemap', function () {
+    gulp.src('build/**/*.html')
+        .pipe(sitemap({
+            siteUrl: 'http://www.specky.co',
+            changefreq: 'weekly',
+            pages: ['build/index.html', 'build/blog/**/*.html', 'build/register/*.html','!build/assets/**/*.html']
+        }))
+        .pipe(gulp.dest('./build'));
 });

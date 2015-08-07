@@ -212,11 +212,11 @@
             </article>
         </div>
         <div class="col-sm-12 col-lg-7">
-            <div id="subscribe" class="form">
+            <div class="form">
                 <div class="form-group form-inline">
                     <input size="15" type="text" class="form-control required" id="NewsletterName" name="NewsletterName" placeholder="Your name" /> 
                     <input size="25" type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" />                                                
-                    <input id="join" class="btn btn-default" value="JOIN" />
+                    <input id="subscribe" class="btn btn-default" value="JOIN" />
                 </div>
             </div>
         </div>

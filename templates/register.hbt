@@ -58,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <button id="join" class="btn btn-primary btn-lg btn-block">Join</button>
+                    <button id="subscribe" class="btn btn-primary btn-lg btn-block">Join</button>
                 </div>
                 <p class="agree-text">By clicking you agree to our Terms of Service, Privacy Policy & Refund Policy.</p>
             </div>
