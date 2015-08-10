@@ -1,0 +1,117 @@
+{{#extend "layout"}}
+{{#content "nav"}}
+<nav class="navigation navigation-header">
+    <div class="container">
+        <div class="navigation-brand">
+            <div class="brand-logo">
+                <img src="/assets/img/speck-hdpi.png"/>           
+                <span style="vertical-align:middle;">SPECKY</span>    
+            </div>
+            <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown" data-target=".navigation-navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navigation-navbar">                                    
+            <ul class="navigation-bar navigation-bar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li  class="active-main"><a href="/pricing">Pricing</a></li>
+                <!--li><a href="/sp/register">Login</a></li-->
+                <li><a href="/register">Sign up</a></li>
+            </ul>              
+        </div>
+    </div>
+ </nav>
+{{/content}}
+{{#content "main"}}    
+<div id="body">
+  <div id="hero" class="static-header light clearfix">
+    <div class="text-heading">
+      <h1 class="animated hiding" data-animation="bounceInDown" data-delay="0">Getting Started with <span class="highlight">Specky is Free</span></h1>
+      <p class="animated hiding" data-animation="fadeInDown" data-delay="200">improve candidate response rates through better job descriptions and efficient job spec management<p>
+      <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="300">increase passive candidate engagement by answering questions that help candidates make crucial career decisions<p>                   
+      <ul class="list-inline">
+        <li><a href="/register" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="400">START NOW</a></li>
+      </ul>  
+    </div>
+    <div class="video-wrapper">
+      <div class="container">
+        <div class="twentytwenty-container">       
+          <img src="/assets/img/features/app_block_doc.png" alt="before image"/>
+          <img src="/assets/img/features/app_block.png" alt="after image"/>
+        </div>
+      </div>     
+    </div>
+  </div>  
+  <section id="product" class="section dark">
+    <div class="container">
+      <div class="section-header animated hiding" data-animation="fadeInDown">
+        <h2>PRODUCT <span class="highlight">PACKAGES</span></h2>
+        <div class="sub-heading">
+          Try Specky for Free! If you find it useful, join one of our reasonable priced plans
+        </div>
+      </div>
+      <div class="section-content row">
+        <div class="col-sm-4">
+          <div class="package-column animated hiding" data-animation="flipInY">
+            <div class="package-title">Starter</div>
+            <div class="package-price">
+              <div class="price" style="font-size:80px;">FREE</div>      
+              <div class="period">for 3 months</div>
+            </div>
+            <div class="package-detail">
+              <ul class="list-unstyled">
+                <li><strong>Single</strong> User</li>
+                <li><strong>Unlimited</strong> Draft Specs</li>
+                <li><strong>4</strong> Live Specs</li>          
+              </ul>
+              <a href="#" class="btn btn-secondary btn-block">Join</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="package-column animated hiding" data-animation="flipInY" data-delay="500">
+            <div class="package-title">Individual</div>
+            <div class="package-price">
+              <div class="price"><span class="currency">£</span>45</div>
+              <div class="period">per month</div>
+            </div>
+            <div class="package-detail">
+              <ul class="list-unstyled">
+                <li><strong>Single</strong> User</li>
+                <li><strong>Unlimited</strong> Draft Specs</li>
+                <li><strong>Unlimited</strong> Live Specs</li>                            
+              </ul>
+              <a href="#" class="btn btn-secondary btn-block">Join</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="package-column animated hiding" data-animation="flipInY">
+            <div class="package-title">Agency</div>
+            <div class="package-price">
+              <div class="price"><span class="currency">£</span>95</div>
+              <div class="period">per month</div>
+            </div>
+            <div class="package-detail">
+              <ul class="list-unstyled">
+                <li><strong>3</strong> Users</li>
+                <li><strong>Unlimited</strong> Draft Specs</li>
+                <li><strong>Unlimited</strong> Live Specs</li>                            
+              </ul>
+              <a href="#" class="btn btn-secondary btn-block">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>    
+</div>
+{{/content}}
+
+{{#content "scripts"}}
+{{/content}}
+{{/extend}}
