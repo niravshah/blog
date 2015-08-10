@@ -157,8 +157,6 @@ gulp.task('git', function(){
   return gulp.src('.')
     .pipe(git.add())
     .pipe(git.commit('Updates'))
-    .pipe(git.push('origin', 'master', function (err) {
-    if (err) throw err;
-  }))
+    .pipe(git.push('origin', 'master'));
 });
 
