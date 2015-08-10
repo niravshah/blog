@@ -156,10 +156,12 @@ gulp.task('sitemap', function () {
 gulp.task('git', function(){
   return gulp.src('.')
     .pipe(git.add())
-    .pipe(git.commit('Updates'))
-    .pipe(git.push('origin', 'master'));       
+    .pipe(git.commit('Updates'));    
 });
 
 gulp.task('push', function(){
+  git.push('origin', 'master', function (err) {
+    if (err) throw err;
+  });
 });
 
