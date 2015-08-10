@@ -66,7 +66,7 @@
             <div class="col-sm-6  animated hiding" data-animation="fadeInLeft">                                
                 <article>
                   <h3 style="margin-top:0px;"><span class="highlight">INTELLIGENT </span><br/>JOB DESCRIPTIONS</h3>
-                    <div class="sub-title">Improve Candidates response rates by sharing insights about the career prospects, location, team culture and hiring organization.</div>
+                    <div class="sub-title">Improve Candidates response rates by sharing insights about career prospects, location, team culture and hiring organization.</div>
                     <p>Traditional Job Specs give a great overview of the role and skills required for the job, but they don't answer career, organization or culture related questions that candidates have at the onset.
                     <span class="highlight">Specky</span> helps you use your industry know-how to curate and annotate job specs in an extremely easy and effective way to get more high quality candidates interested in your opening.</p>
                 </article>                
@@ -211,7 +211,7 @@
     <div class="container center">
         <div class="section-header animated hiding" data-animation="fadeInDown">
             <h2><span class="highlight">RECRUITER BRAND</span></h2>
-            <p>At Specky, we candidates to see Recruiters as trusted career advisors, an not just head hunters.<br/>We want to give you a platform where you can interact and answer candidate career questions; at the same time building a trusted Recrutier Brand for yourself that you can leverage for your career progression</p>
+            <p>At Specky, we candidates to see Recruiters as trusted career advisors, an not just head hunters.We want to give you a platform where you can interact and answer candidate career questions; at the same time building a trusted Recrutier Brand for yourself that you can leverage for your career progression</p>
         </div>                              
         <div class="section-content row" style="margin-top:10px;">           
             <div class="col-sm-6  pull-right animated hiding" data-animation="fadeInRight" style="margin-bottom:20px;">
