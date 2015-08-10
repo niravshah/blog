@@ -181,8 +181,11 @@
                     on <time pubdate datetime="{{{this.datetime}}}">{{{this.datetime}}}</time>
                 </p>
             </article>
+            <div id="disqus_thread"></div>
         </div>
-       <div id="disqus_thread"></div>
+        <div class="col-md-4 well hidden-xs">
+        </div>
+     
         <script type="text/javascript">
             var disqus_shortname = 'specky';
             var disqus_identifier = '/post/' + '{{{this.link}}}' ;

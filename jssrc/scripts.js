@@ -20,7 +20,7 @@
     $('#offer-acceptance-val').text(acceptanceRate);
     
     var hired = parseInt($('#hired-candidate-val').text());
-    console.log(responseRate,engagementRate,screeningRate,offerRate,acceptanceRate,hired);
+    //console.log(responseRate,engagementRate,screeningRate,offerRate,acceptanceRate,hired);
 
     var candidatesWithOffer = Math.ceil((hired*100)/acceptanceRate);    
     $('#offered-val').text(candidatesWithOffer);
@@ -35,22 +35,21 @@
   };
   
   
-  var $document   = $(document),
-      selector    = '[data-rangeslider]',
-      $element    = $(selector);
+  var rangeSliderSelector    = '[data-rangeslider]',
+      $rangeSliderElement    = $(rangeSliderSelector);
 
-  $element.rangeslider({
+  $rangeSliderElement.rangeslider({
     polyfill: false,
     onInit: function() {
-      console.log('Range Slider Init');
+      //console.log('Range Slider Init');
       app.fn.responseRateCalc();
     },
     onSlide: function(position, value) {
-      console.log('Range Slider onSlide');
+      //console.log('Range Slider onSlide');
       app.fn.responseRateCalc();
     },
     onSlideEnd: function(position, value) {
-      console.log('onSlideEnd');      
+      //console.log('onSlideEnd');      
     }
   });
 

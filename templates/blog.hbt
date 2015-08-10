@@ -47,20 +47,20 @@
         <div class="col-md-8">
             <div class="row">
             {{#each collections.blog}}
-            <div class="col-md-5 col-xs-12">
-            <div class="card">
-                <div class="card-image">
+              <div class="col-md-5 col-xs-12">
+                <div class="card">
+                  <div class="card-image">
                     <img class="img-responsive" src="{{{this.img}}}">
                     <span class="card-title"><a href="/blog/{{{this.link}}}">{{this.title}}</a></span>
-                </div>
-                <div class="card-content">
+                  </div>
+                  <div class="card-content">
                     <p>{{{this.short}}}</p>
-                </div>
-                 <div class="card-action">
+                  </div>
+                  <div class="card-action">
                     <a href="/blog/{{{this.link}}}">Read More</a>
+                  </div>
                 </div>
-            </div>
-                </div>
+              </div>
             {{/each}}
             </div>
         </div>
