@@ -43,7 +43,7 @@
         <p class="animated hiding" data-animation="fadeInDown" data-delay="200">improve candidate response rates through better job descriptions and efficient job spec management<p>
         <p class="hidden-xs animated hiding" data-animation="fadeInDown" data-delay="300">increase passive candidate engagement by answering questions that help candidates make crucial career decisions<p>                   
         <ul class="list-inline">
-            <li><a href="/register" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="400">TRY FOR FREE</a></li>
+            <li><a href="/register" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="400">START FOR FREE</a></li>
         </ul>  
     </div>
     <div class="video-wrapper">
@@ -200,7 +200,7 @@
                 <div class="form-group form-inline">
                     <input size="15" type="text" class="form-control required" id="NewsletterName" name="NewsletterName" placeholder="Your name" /> 
                     <input size="25" type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" />                                                
-                    <input id="subscribe" class="btn btn-default" value="JOIN" />
+                    <input id="subscribe" class="btn btn-default" value="START NOW" />
                 </div>
             </div>
         </div>
@@ -211,7 +211,7 @@
     <div class="container center">
         <div class="section-header animated hiding" data-animation="fadeInDown">
             <h2><span class="highlight">RECRUITER BRAND</span></h2>
-            <p>At Specky, we candidates to see Recruiters as trusted career advisors, an not just head hunters.We want to give you a platform where you can interact and answer candidate career questions; at the same time building a trusted Recrutier Brand for yourself that you can leverage for your career progression</p>
+            <p>At Specky, we candidates to see Recruiters as trusted career advisors, an not just head hunters. We want to give you a platform where you can interact and answer candidate career questions; at the same time building a trusted Recrutier Brand for yourself that you can leverage for your career progression</p>
         </div>                              
         <div class="section-content row" style="margin-top:10px;">           
             <div class="col-sm-6  pull-right animated hiding" data-animation="fadeInRight" style="margin-bottom:20px;">

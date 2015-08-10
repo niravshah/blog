@@ -25,9 +25,11 @@ var gulpsmith = require('gulpsmith'),
     collections = require('metalsmith-collections'),
     fs = require('fs');
 
-var scp = require('gulp-scp');
+var scp = require('gulp-scp2');
 
 var sitemap = require('gulp-sitemap');
+
+var git = require('gulp-git');
 
 
 var handlebars = require('handlebars'),
@@ -127,14 +129,17 @@ gulp.task('sitemap-copy', function () {
    gulp.src("./sitemap/*.*").pipe(gulp.dest("./build"))
 });
 
-gulp.task('scp', function () {
-    gulp.src('build/**/*.*')
-        .pipe(scp({
-            host: '160.153.57.100',
-            user: 'niravshah',
-            port: 22,
-            path: '/home/niravshah/public_html/**/*.*'
-        }));
+
+gulp.task('scp', function() {
+  return gulp.src('build/**/*.*')
+  .pipe(scp({
+    host: '160.153.57.100',
+    username: 'niravshah',    
+    dest: '/home/niravshah/public_html/'
+  }))
+  .on('error', function(err) {
+    console.log(err);
+  });
 });
 
 gulp.task('sitemap', function () {
@@ -146,3 +151,14 @@ gulp.task('sitemap', function () {
         }))
         .pipe(gulp.dest('./build'));
 });
+
+
+gulp.task('git', function(){
+  return gulp.src('.')
+    .pipe(git.add())
+    .pipe(git.commit('Updates'))
+    .pipe(git.push('origin', 'master', function (err) {
+    if (err) throw err;
+  }))
+});
+
