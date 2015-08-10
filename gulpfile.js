@@ -26,9 +26,7 @@ var gulpsmith = require('gulpsmith'),
     fs = require('fs');
 
 var scp = require('gulp-scp2');
-
 var sitemap = require('gulp-sitemap');
-
 var git = require('gulp-git');
 
 
@@ -125,11 +123,6 @@ gulp.task('critical', function() {
     });
 });
 
-gulp.task('sitemap-copy', function () {
-   gulp.src("./sitemap/*.*").pipe(gulp.dest("./build"))
-});
-
-
 gulp.task('scp', function() {
   return gulp.src('build/**/*.*')
   .pipe(scp({
@@ -143,13 +136,13 @@ gulp.task('scp', function() {
 });
 
 gulp.task('sitemap', function () {
-    gulp.src('build/**/*.html')
-        .pipe(sitemap({
-            siteUrl: 'http://www.specky.co',
-            changefreq: 'weekly',
-            pages: ['build/index.html', 'build/blog/**/*.html', 'build/register/*.html','!build/assets/**/*.html']
-        }))
-        .pipe(gulp.dest('./build'));
+  gulp.src('build/**/*.html')
+    .pipe(sitemap({
+    siteUrl: 'http://www.specky.co',
+    changefreq: 'weekly',
+    pages: ['build/index.html', 'build/blog/**/*.html', 'build/register/*.html','!build/assets/**/*.html']
+  }))
+    .pipe(gulp.dest('./build'));
 });
 
 
