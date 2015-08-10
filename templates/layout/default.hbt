@@ -76,6 +76,8 @@
         <link rel="stylesheet" href="/assets/css/font-lineicons.css" type="text/css" media="all" />
         <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="/assets/css/toastr.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="/assets/js/bower_components/rangeslider.js/dist/rangeslider.css" type="text/css" media="all" />
+    
         <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>        
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.7/script.min.js"></script>
@@ -90,6 +92,8 @@
                 $script('/assets/js/bower_components/jquery.countdown/dist/jquery.countdown.min.js','jquery.countdown');
                 $script('/assets/js/headhesive.min.js','headhesive');
                 $script.ready(['jquery.nav','jquery.appear','jquery.plugin','jquery.countdown','headhesive'], function() {
+                    
+                    $script('/assets/js/bower_components/rangeslider.js/dist/rangeslider.min.js','rangeslider');      
                     $script('/assets/js/toastr.min.js','toastr');    
                     $script('/assets/mailchimp/js/mailing-list.js','mailchimp');    
                     $script('/assets/js/parse-1.5.0.min.js','parse');
@@ -105,8 +109,9 @@
                         Parse.initialize("wLizknDtFC5dTuArjknWvq58fiHLohcBMsF3N79c", "pjmgLhlqWLRklIyIheAfOBJhvQczzXpE8wFxHND4");
                     });
                                     
-                    $script.ready(['jquery.event','jquery.twentytwenty'],function(){
-                      $(window).load(function(){
+                    $script.ready(['jquery.event','jquery.twentytwenty','rangeslider'],function(){
+                      $(window).load(function(){                       
+                       
                         $(".twentytwenty-container").twentytwenty({
                           default_offset_pct: 0.4
                         });

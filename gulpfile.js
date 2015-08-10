@@ -78,7 +78,8 @@ gulp.task('clean', function() {
     }).pipe(clean());
 });
 gulp.task('minify-js', function() {
-    return gulp.src('./jssrc/*.js').pipe(uglify()).pipe(gulp.dest('./build/assets/js'));
+    //return gulp.src('./jssrc/*.js').pipe(uglify()).pipe(gulp.dest('./build/assets/js'));
+    return gulp.src('./jssrc/*.js').pipe(gulp.dest('./build/assets/js'));
 });
 gulp.task('minify-css', function() {
     return gulp.src('./csssrc/*.css').pipe(minifyCss({

@@ -1,10 +1,59 @@
 (function() {
   "use strict";
   // Init global DOM elements, functions and arrays
+
   window.app = {
     el: {},
     fn: {}
   };
+  
+  app.fn.responseRateCalc = function(){
+    var responseRate = parseInt($('#response-rate-range').val());
+    $('#response-range-val').text(responseRate);
+    var engagementRate = parseInt($('#engagement-range').val());
+    $('#engagement-val').text(engagementRate);
+    var screeningRate = parseInt($('#pass-screening-range').val());
+    $('#pass-screening-val').text(screeningRate);
+    var offerRate = parseInt($('#offer-extended-range').val());
+    $('#offer-extended-val').text(offerRate);
+    var acceptanceRate = parseInt($('#offer-acceptance-range').val());
+    $('#offer-acceptance-val').text(acceptanceRate);
+    
+    var hired = parseInt($('#hired-candidate-val').text());
+    console.log(responseRate,engagementRate,screeningRate,offerRate,acceptanceRate,hired);
+
+    var candidatesWithOffer = Math.ceil((hired*100)/acceptanceRate);    
+    $('#offered-val').text(candidatesWithOffer);
+    var candidatesWithInterview = Math.ceil((candidatesWithOffer * 100)/offerRate);
+    $('#interview-val').text(candidatesWithInterview);
+    var engagedPipeline = Math.ceil((candidatesWithInterview * 100)/screeningRate);
+    $('#engaged-pipeline-val').text(engagedPipeline);
+    var pipeline = Math.ceil((engagedPipeline * 100)/engagementRate);
+    $('#pipeline-val').text(pipeline);
+    var sourcedCandidates =Math.ceil((pipeline * 100)/responseRate);
+    $('#sourced-val').text(sourcedCandidates);
+  };
+  
+  
+  var $document   = $(document),
+      selector    = '[data-rangeslider]',
+      $element    = $(selector);
+
+  $element.rangeslider({
+    polyfill: false,
+    onInit: function() {
+      console.log('Range Slider Init');
+      app.fn.responseRateCalc();
+    },
+    onSlide: function(position, value) {
+      console.log('Range Slider onSlide');
+      app.fn.responseRateCalc();
+    },
+    onSlideEnd: function(position, value) {
+      console.log('onSlideEnd');      
+    }
+  });
+
   app.el['window'] = $(window);
   app.el['document'] = $(document);
   app.el['loader'] = $('#loader');
