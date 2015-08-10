@@ -2,5 +2,5 @@ ssh niravshah@160.153.57.100
 
 /home/niravshah/public_html
 
-cd buil
+cd build
 scp -r . niravshah@160.153.57.100:/home/niravshah/public_html/
