@@ -51,8 +51,10 @@
 </style>
 
 <div style="padding-top:20px;padding-bottom:20px;">
-  <h3 style="text-align:center;">CANDIDATE PIPELINE</h3>
-  <p style="text-align:center;font-size:14px;">Interactive Visulaization of Prospects through your Recruitment Pipeline from Sourcing to getting Hired and filters at each stage</p>
+  <div>
+    <h3 style="text-align:center;">CANDIDATE PIPELINE</h3>
+    <p style="text-align:center;font-size:14px;">Interactive Visulaization of Prospects through your Recruitment Pipeline from Sourcing to getting Hired and filters at each stage</p>    
+  </div>
   <form id="responseRateApp" class="col-md-12">
     <div class="b-l-r row well">                
       <div class="col-md-6 col-md-offset-3">                    
@@ -71,7 +73,7 @@
     </div>  
     <div class="b-l-r row">                
       <div class="col-md-6 col-md-offset-3">
-        <div class="row" id="response-rate-range-div">
+        <div id="response-rate-range-tooltip" class="row" id="response-rate-range-div">
           <input id="response-rate-range" type="range" name="points" min="0" max="100" value="20" data-rangeslider>    
         </div>
         <div class="row">
@@ -215,7 +217,4 @@
       </div>
     </div>                                
   </form>
-  <ol id="responseRateApp-tour">
-    <li data-id="response-rate-range-div">All Rate Filters in this illustration are dynamic. Change them to represent your candidate pipeline.</li>
-  </ol>  
 </div>

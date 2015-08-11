@@ -126,8 +126,10 @@
           </style>
           
           <div style="padding-top:20px;padding-bottom:20px;">
-            <h3 style="text-align:center;">CANDIDATE PIPELINE</h3>
-            <p style="text-align:center;font-size:14px;">Interactive Visulaization of Prospects through your Recruitment Pipeline from Sourcing to getting Hired and filters at each stage</p>
+            <div>
+              <h3 style="text-align:center;">CANDIDATE PIPELINE</h3>
+              <p style="text-align:center;font-size:14px;">Interactive Visulaization of Prospects through your Recruitment Pipeline from Sourcing to getting Hired and filters at each stage</p>    
+            </div>
             <form id="responseRateApp" class="col-md-12">
               <div class="b-l-r row well">                
                 <div class="col-md-6 col-md-offset-3">                    
@@ -146,7 +148,7 @@
               </div>  
               <div class="b-l-r row">                
                 <div class="col-md-6 col-md-offset-3">
-                  <div class="row" id="response-rate-range-div">
+                  <div id="response-rate-range-tooltip" class="row" id="response-rate-range-div">
                     <input id="response-rate-range" type="range" name="points" min="0" max="100" value="20" data-rangeslider>    
                   </div>
                   <div class="row">
@@ -290,9 +292,6 @@
                 </div>
               </div>                                
             </form>
-            <ol id="responseRateApp-tour">
-              <li data-id="response-rate-range-div">All Rate Filters in this illustration are dynamic. Change them to represent your candidate pipeline.</li>
-            </ol>  
           </div>
           <p>                
             <span class="author">By <a rel="author" href="mailto:info@specky.co">Specky</a></span> 
@@ -400,9 +399,8 @@
         <link rel="stylesheet" href="/assets/css/toastr.min.css" type="text/css" media="all" />
         
         <link rel="stylesheet" href="/assets/js/bower_components/ionrangeslider/css/ion.rangeSlider.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="/assets/js/bower_components/ionrangeslider/css/ion.rangeSlider.skinModern.css" type="text/css" media="all" />
-    
-        <link rel="stylesheet" href="/assets/js/joyride/joyride-master/joyride-2.1.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="/assets/js/bower_components/ionrangeslider/css/ion.rangeSlider.skinModern.css" type="text/css" media="all" />    
+        <link rel="stylesheet" href="/assets/js/bower_components/tooltipster/css/tooltipster.css" type="text/css" media="all" />
     
         <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>        
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
@@ -425,7 +423,9 @@
                     $script('/assets/js/parse-1.5.0.min.js','parse');
                     $script('/assets/js/jquery.event.move.js', 'jquery.event');  
                     $script('/assets/js/jquery.twentytwenty.js', 'jquery.twentytwenty');
-                    $script('/assets/js/joyride/joyride-master/jquery.joyride-2.1.js', 'joyride');                    
+                    
+                    $script('/assets/js/bower_components/tooltipster/js/jquery.tooltipster.min.js', 'tooltipster');                    
+                  
                     $script('/assets/js/scripts.js','scripts');
                     $script.ready('toastr',function(){
                         toastr.options = {
@@ -435,7 +435,7 @@
                     $script.ready('parse',function(){
                         Parse.initialize("wLizknDtFC5dTuArjknWvq58fiHLohcBMsF3N79c", "pjmgLhlqWLRklIyIheAfOBJhvQczzXpE8wFxHND4");
                     });                                   
-                    $script.ready(['jquery.event','jquery.twentytwenty','rangeslider','joyride'],function(){
+                    $script.ready(['jquery.event','jquery.twentytwenty','rangeslider','tooltipster'],function(){
                       $(window).load(function(){                                              
                         $(".twentytwenty-container").twentytwenty({
                           default_offset_pct: 0.4
@@ -443,11 +443,14 @@
                         $('#clock').countdown('2015/10/01', function(event) {
                           $(this).html(event.strftime('%D days %H:%M:%S'));
                         }); 
-                        $("#responseRateApp-tour").joyride({                          
-                          tipLocation: 'right',
-                          nextButton: false,
-                          timer: 2000
-                        });                          
+                        
+                        $('#response-rate-range-tooltip').tooltipster({
+                          position:'right',
+                          content: $('<span>All Rate Filters in this illustration are dynamic.<br/> Change them to represent your Candidate Pipeline.</span>')
+                        });                        
+                        
+                        $('#response-rate-range-tooltip').tooltipster('show');
+                        
                       });
                     });                  
                 });
