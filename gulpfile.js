@@ -170,3 +170,7 @@ gulp.task('scp', function() {
     console.log(err);
   });
 });
+
+gulp.task('deploy', function(){
+  runSequence('git','scp');
+})
