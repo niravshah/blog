@@ -47,7 +47,7 @@
         <div class="col-md-7">
             <div class="row">
             {{#each collections.blog}}
-              <div class="col-md-5 col-xs-12">
+              <div class="col-md-6 col-xs-12">
                 <div class="card">
                   <div class="card-image">
                     <img class="img-responsive" src="{{{this.img}}}">
