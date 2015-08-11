@@ -4,7 +4,7 @@ page-description: This blog puts into perspective the necessity of optimising th
 title: Why does Candidate Response Rate matter?
 link: why-response-rates-matter
 template: post-a.hbt
-datetime: 2015-08-06 12:00:00
+datetime: 2015-08-12 14:52:00
 img: http://www.sourcecon.com/media/2013/04/candidate-hiring-concept.jpg
 author: 
     name: Specky

@@ -49,8 +49,15 @@
               <p>As more and more recruting agencies start investing capital in proactive sourcing strategies and move away from the conventional 'Spray and Pray' paradigm of 
                 posting a vacancy on job boards and waiting for candidates to reply; the number of candidates who respond back and the quality of candidates engaged 
                 becomes a key metric to measure success due to the rise in initial cost of acquisition.</p>
-              <p>In the LinkedIn 2015 survey 46% of the Global Recruitment leaders surveryed, stated 'Sourcing Highly Skilled Talent' as their number one priority. This was followed
-                by 'Improving the Quality of Hire' and 'Improving Sourcing Techniques'.</p>
+
+              <div style="padding:40px 0px">
+                <img src="/assets/img/features/ln-2015-sourcing-trends.png" class="img-responsive" alt="thumb" />  
+                <p style="padding-top:20px;">
+                  In the <span class="highlight"><a href="https://business.linkedin.com/talent-solutions/resources/recruiting-tips/global-recruiting-trends">LinkedIn 2015 Global Recruiting Trends</a></span> survey <span class="highlight">46%</span> of the Global Recruitment leaders surveryed, 
+                  stated <span class="highlight">'Sourcing Highly Skilled Talent'</span> as their number one priority. This was followed
+                  by 'Improving the Quality of Hire' and 'Improving Sourcing Techniques'.
+                </p>                
+              </div>
               
               <p>Lets put Candidate Response Rates into some perspective via a typical Candidate Funnel that tracks the journey of candidate
                 from a prospect to a hire. The example funnel below is interactive. So feel free to play with it using your own metrics.</p>
@@ -95,11 +102,6 @@
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
         </script>
-        <style>
-          article p{
-            text-align:justify;
-          }
-        </style>
     </div>
 </div>
 </div>

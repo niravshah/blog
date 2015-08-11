@@ -1,6 +1,5 @@
 (function() {
   "use strict";
-  // Init global DOM elements, functions and arrays
 
   window.app = {
     el: {},
@@ -42,12 +41,10 @@
     grid:true,
     postfix:"%",
     keyboard: true,
-    onStart: function (data) {
-      console.log("onStart");
+    onStart: function (data) {      
       app.fn.responseRateCalc();
     },
-    onChange: function (data) {
-      console.log("onChange");
+    onChange: function (data) {      
       app.fn.responseRateCalc();
     },
     onFinish: function (data) {

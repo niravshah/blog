@@ -29,11 +29,18 @@
   </div>         
   <div class="row well">
     <h3>Speck Blog</h3>
+    <ul>     
+      {{#each collections.blog}}
+      <li><a href="/blog/{{{this.link}}}">{{this.title}}</a></li>
+      {{/each}}
+    </ul>
   </div>
   <div class="row well">
     <h3>Resources</h3>
     <ul>
-      <li><a href="#">Candidate Pipeline Metrics Calculator</a></li>
+      {{#each collections.resources}}
+      <li><a href="/blog/{{{this.link}}}">{{this.title}}</a></li>
+      {{/each}}
     </ul>
   </div>
 </div>

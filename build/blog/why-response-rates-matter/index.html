@@ -76,133 +76,224 @@
               <p>As more and more recruting agencies start investing capital in proactive sourcing strategies and move away from the conventional 'Spray and Pray' paradigm of 
                 posting a vacancy on job boards and waiting for candidates to reply; the number of candidates who respond back and the quality of candidates engaged 
                 becomes a key metric to measure success due to the rise in initial cost of acquisition.</p>
-              <p>In the LinkedIn 2015 survey 46% of the Global Recruitment leaders surveryed, stated 'Sourcing Highly Skilled Talent' as their number one priority. This was followed
-                by 'Improving the Quality of Hire' and 'Improving Sourcing Techniques'.</p>
+
+              <div style="padding:40px 0px">
+                <img src="/assets/img/features/ln-2015-sourcing-trends.png" class="img-responsive" alt="thumb" />  
+                <p style="padding-top:20px;">
+                  In the <span class="highlight"><a href="https://business.linkedin.com/talent-solutions/resources/recruiting-tips/global-recruiting-trends">LinkedIn 2015 Global Recruiting Trends</a></span> survey <span class="highlight">46%</span> of the Global Recruitment leaders surveryed, 
+                  stated <span class="highlight">'Sourcing Highly Skilled Talent'</span> as their number one priority. This was followed
+                  by 'Improving the Quality of Hire' and 'Improving Sourcing Techniques'.
+                </p>                
+              </div>
               
               <p>Lets put Candidate Response Rates into some perspective via a typical Candidate Funnel that tracks the journey of candidate
                 from a prospect to a hire. The example funnel below is interactive. So feel free to play with it using your own metrics.</p>
               
-              <form id="responseRateApp" class="col-md-12" style="padding-top:20px;padding-bottom:20px;">
-                <div class="row well">                
-                  <div class="col-md-6 col-md-offset-3">                    
-                    <div class="row">
-                      <p class="calcVal" id="sourced-val"></p>
+              <style>
+                .arrow-down {
+                  width: 0; 
+                  height: 0; 
+                  border-left: 20px solid transparent;
+                  border-right: 20px solid transparent;
+                  border-top: 20px solid #f2a2a2;    
+                  margin:auto;
+                }
+                .arrow-parent{
+                  width:100%;
+                  margin:10px;0px;
+                }
+                .filter-result{
+                  margin-top:20px;
+                }
+              
+                #responseRateApp p{
+                  text-align:center;
+                  font-size:12px;
+                  text-transform: uppercase;
+                  font-weight:bold;
+                }
+              
+                #responseRateApp p.calcVal#hired-candidate-val{
+                  color: #20b426;
+                  font-size: 30px;
+                }
+              
+                #responseRateApp p.calcVal#sourced-val{
+                  color: red;
+                  font-size: 30px;
+                }
+              
+              
+                #responseRateApp p.calcVal{
+                  font-size:24px;
+                }  
+              </style>
+              
+              <div style="padding-top:20px;padding-bottom:20px;">
+                <h4 style="text-align:center;">CANDIDATE PIPELINE</h4>
+                <form id="responseRateApp" class="col-md-12">
+                  <div class="row well">                
+                    <div class="col-md-6 col-md-offset-3">                    
+                      <div class="row">
+                        <p class="calcVal" id="sourced-val"></p>
+                      </div>
+                      <div class="row">
+                        <p>Candidates Sourced</p>  
+                      </div>
                     </div>
-                    <div class="row">
-                      <p>Candidates Sourced</p>  
-                    </div>
-                  </div>
-                </div>                
-                <div class="row">                
-                  <div class="col-md-6 col-md-offset-3">
-                    <div class="row">
-                      <input id="response-rate-range" type="range" name="points" min="0" max="100" value="20" data-rangeslider>    
-                    </div>
-                    <div class="row">
-                      <p>Response Rate</p>  
-                    </div>
-                  </div>
-                </div>
-                <hr/>
-                <div class="row">                
-                  <div class="col-md-6 col-md-offset-3">        
-                    <div class="row">
-                      <p class="calcVal" id="pipeline-val"></p>
-                    </div>
-                    <div class="row">
-                      <p>Candidates in Pipeline</p>  
-                    </div>
-                  </div>
-                </div> 
-                <hr/>
-                <div class="row">                
-                  <div class="col-md-6 col-md-offset-3">
-                    <div class="row">
-                      <input id="engagement-range" type="range" name="points" min="0" max="100" value="25" data-rangeslider>  
-                    </div>
-                    <div class="row">
-                      <p>Engagement Rate</p>  
-                    </div>                   
-                  </div>
-                </div>                
-                <hr/>
-                <div class="row">                
-                  <div class="col-md-6 col-md-offset-3">                    
-                    <div class="row">
-                      <p class="calcVal" id="engaged-pipeline-val"></p>
-                    </div>
-                    <div class="row">
-                      <p>Engaged Pipeline</p>  
-                    </div>
-                  </div>
-                </div>
-                <hr/>
-                <div class="row">                
-                  <div class="col-md-6 col-md-offset-3">
-                    <div class="row">
-                      <input id="pass-screening-range" type="range" name="points" min="0" max="100" value="75" data-rangeslider>  
-                    </div>
-                    <div class="row">
-                      <p>Pass Screening</p>  
-                    </div>                    
-                  </div>
-                </div>                
-                <hr/>
-                <div class="row">                
-                  <div class="col-md-6 col-md-offset-3">                    
-                    <div class="row">
-                      <p class="calcVal" id="interview-val"></p>
-                    </div>
-                    <div class="row">
-                      <p>Candidates At Interview</p>  
+                  </div>                
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
+                  </div>  
+                  <div class="row">                
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="row">
+                        <input id="response-rate-range" type="range" name="points" min="0" max="100" value="20" data-rangeslider>    
+                      </div>
+                      <div class="row">
+                        <p>Response Rate</p>  
+                      </div>
                     </div>
                   </div>
-                </div>
-                <hr/>
-                <div class="row">                
-                  <div class="col-md-6 col-md-offset-3">
-                    <div class="row">
-                      <input id="offer-extended-range" type="range" name="points" min="0" max="100" value="40" data-rangeslider>  
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
+                  </div>  
+                  <div class="row filter-result">                
+                    <div class="col-md-6 col-md-offset-3">        
+                      <div class="row">
+                        <p class="calcVal" id="pipeline-val"></p>
+                      </div>
+                      <div class="row">
+                        <p>Candidates in Pipeline</p>  
+                      </div>
                     </div>
-                    <div class="row">
-                      <p>Offer Extended</p>  
-                    </div>                                        
+                  </div> 
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
                   </div>
-                </div>                
-                <hr/>
-                <div class="row">                
-                  <div class="col-md-6 col-md-offset-3">
-                    <div class="row">
-                      <p class="calcVal" id="offered-val">40</p>
+                  <div class="row">                
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="row">
+                        <input id="engagement-range" type="range" name="points" min="0" max="100" value="25" data-rangeslider>  
+                      </div>
+                      <div class="row">
+                        <p>Engagement Rate</p>  
+                      </div>                   
                     </div>
-                    <div class="row">
-                      <p>Candidates with Offer</p>  
+                  </div>                
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
+                  </div>
+                  <div class="row filter-result">                
+                    <div class="col-md-6 col-md-offset-3">                    
+                      <div class="row">
+                        <p class="calcVal" id="engaged-pipeline-val"></p>
+                      </div>
+                      <div class="row">
+                        <p>Engaged Pipeline</p>  
+                      </div>
                     </div>
                   </div>
-                </div>     
-                <hr/>
-                <div class="row">                
-                  <div class="col-md-6 col-md-offset-3">
-                    <div class="row">
-                      <input id="offer-acceptance-range" type="range" name="points" min="0" max="100" value="80" data-rangeslider>  
-                    </div>
-                    <div class="row">
-                      <p>Offer Acceptance</p>  
-                    </div>                                                            
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
                   </div>
-                </div>                
-                <hr/>
-                <div class="row well" style="border-top:none; border-bottom: 2px solid #1ac6ff">                
-                  <div class="col-md-6 col-md-offset-3">                    
-                    <div class="row">
-                      <p class="calcVal" id="hired-candidate-val">10</p>
+                  <div class="row">                
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="row">
+                        <input id="pass-screening-range" type="range" name="points" min="0" max="100" value="75" data-rangeslider>  
+                      </div>
+                      <div class="row">
+                        <p>Pass Screening</p>  
+                      </div>                    
                     </div>
-                    <div class="row">
-                      <p>Candidates Hired</p>  
+                  </div>                
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
+                  </div>
+                  <div class="row filter-result">                
+                    <div class="col-md-6 col-md-offset-3">                    
+                      <div class="row">
+                        <p class="calcVal" id="interview-val"></p>
+                      </div>
+                      <div class="row">
+                        <p>Candidates At Interview</p>  
+                      </div>
                     </div>
                   </div>
-                </div>                                
-              </form>
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
+                  </div>
+                  <div class="row">                
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="row">
+                        <input id="offer-extended-range" type="range" name="points" min="0" max="100" value="40" data-rangeslider>  
+                      </div>
+                      <div class="row">
+                        <p>Offer Extended</p>  
+                      </div>                                        
+                    </div>
+                  </div>                
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
+                  </div>
+                  <div class="row filter-result">                
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="row">
+                        <p class="calcVal" id="offered-val">40</p>
+                      </div>
+                      <div class="row">
+                        <p>Candidates with Offer</p>  
+                      </div>
+                    </div>
+                  </div>     
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
+                  </div>
+                  <div class="row">                
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="row">
+                        <input id="offer-acceptance-range" type="range" name="points" min="0" max="100" value="80" data-rangeslider>  
+                      </div>
+                      <div class="row">
+                        <p>Offer Acceptance</p>  
+                      </div>                                                            
+                    </div>
+                  </div>                
+                  <div class="row">
+                    <div class="arrow-parent">
+                      <div class="arrow-down"></div>  
+                    </div>   
+                  </div>
+                  <div class="row well" style="border-top:none; border-bottom: 2px solid #1ac6ff">                
+                    <div class="col-md-6 col-md-offset-3">                    
+                      <div class="row">
+                        <p class="calcVal" id="hired-candidate-val">10</p>
+                      </div>
+                      <div class="row">
+                        <p>Candidates Hired</p>  
+                      </div>
+                    </div>
+                  </div>                                
+                </form>
+              </div>
               <p>A typical agency would see response rates of 15%-20% taking the number of candidates you need to source to place 1 hire to 139! The low candidate response rates can be
                 attributed to various deficiencies of the prevelant sourcing and candidate communication process. The most popular approach being sending out generic irrelevant email blasts 
                 to the sourced candidates</p>
@@ -222,7 +313,7 @@
               <br>
               <p>                
                 <span class="author">By <a rel="author" href="mailto:info@specky.co">Specky</a></span> 
-                on <time pubdate datetime="Thu Aug 06 2015 12:00:00 GMT+0000 (UTC)">Thu Aug 06 2015 12:00:00 GMT+0000 (UTC)</time>
+                on <time pubdate datetime="Wed Aug 12 2015 14:52:00 GMT+0000 (UTC)">Wed Aug 12 2015 14:52:00 GMT+0000 (UTC)</time>
               </p>
             </article>
             <div id="disqus_thread"></div>
@@ -260,11 +351,14 @@
              </div>         
              <div class="row well">
                <h3>Speck Blog</h3>
+               <ul>     
+                 <li><a href="/blog/why-response-rates-matter">Why does Candidate Response Rate matter?</a></li>
+               </ul>
              </div>
              <div class="row well">
                <h3>Resources</h3>
                <ul>
-                 <li><a href="#">Candidate Pipeline Metrics Calculator</a></li>
+                 <li><a href="/blog/candidate-pipeline-metrics-calculator">Candidate Pipeline - Metrics Calculator</a></li>
                </ul>
              </div>
            </div>        </div>     
@@ -278,11 +372,6 @@
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
         </script>
-        <style>
-          article p{
-            text-align:justify;
-          }
-        </style>
     </div>
 </div>
 </div>

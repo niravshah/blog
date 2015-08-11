@@ -70,7 +70,10 @@ gulp.task('metalsmith', function() {
             pattern: 'blog/*post.md',
             sortBy: 'datetime',
             reverse: true
-        }
+        },
+        resources: {
+            pattern: 'resources/*.md'
+        }      
     })).use(markdown()).use(templates('handlebars')).use(permalinks(':collection/:link'))).pipe(gulp.dest("./build"));
 });
 gulp.task('copyStatic', function() {
