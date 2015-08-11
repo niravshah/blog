@@ -291,7 +291,7 @@
               </div>                                
             </form>
             <ol id="responseRateApp-tour">
-              <li data-id="response-rate-range-div">All Rate Filters in this illustration are dynamic. Change them to represent your candidate piple.</li>
+              <li data-id="response-rate-range-div">All Rate Filters in this illustration are dynamic. Change them to represent your candidate pipeline.</li>
             </ol>  
           </div>
           <p>                
@@ -443,8 +443,7 @@
                         $('#clock').countdown('2015/10/01', function(event) {
                           $(this).html(event.strftime('%D days %H:%M:%S'));
                         }); 
-                        $("#responseRateApp-tour").joyride({
-                          autoStart : true,
+                        $("#responseRateApp-tour").joyride({                          
                           tipLocation: 'right',
                           nextButton: false,
                           timer: 2000
