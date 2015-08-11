@@ -12,7 +12,7 @@
     margin:10px;0px;
   }
   .filter-result{
-    margin-top:20px;
+    padding-top:20px;
   }
 
   #responseRateApp p{
@@ -36,12 +36,25 @@
   #responseRateApp p.calcVal{
     font-size:24px;
   }  
+  .b-l-r{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+  #responseRateApp .well{
+    margin-bottom:0px;
+  }
+  #responseRateApp .well.well-bottom{
+    border-top:none; 
+    border-bottom: 2px solid #1ac6ff;
+    margin-bottom:40px;
+  }
 </style>
 
 <div style="padding-top:20px;padding-bottom:20px;">
-  <h4 style="text-align:center;">CANDIDATE PIPELINE</h4>
+  <h3 style="text-align:center;">CANDIDATE PIPELINE</h3>
+  <p style="text-align:center;font-size:14px;">Interactive Visulaization of Prospects through your Recruitment Pipeline from Sourcing to getting Hired and filters at each stage</p>
   <form id="responseRateApp" class="col-md-12">
-    <div class="row well">                
+    <div class="b-l-r row well">                
       <div class="col-md-6 col-md-offset-3">                    
         <div class="row">
           <p class="calcVal" id="sourced-val"></p>
@@ -51,14 +64,14 @@
         </div>
       </div>
     </div>                
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>  
-    <div class="row">                
+    <div class="b-l-r row">                
       <div class="col-md-6 col-md-offset-3">
-        <div class="row">
+        <div class="row" id="response-rate-range-div">
           <input id="response-rate-range" type="range" name="points" min="0" max="100" value="20" data-rangeslider>    
         </div>
         <div class="row">
@@ -66,12 +79,12 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>  
-    <div class="row filter-result">                
+    <div class="b-l-r row filter-result">                
       <div class="col-md-6 col-md-offset-3">        
         <div class="row">
           <p class="calcVal" id="pipeline-val"></p>
@@ -81,12 +94,12 @@
         </div>
       </div>
     </div> 
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>
-    <div class="row">                
+    <div class="b-l-r row" id="engagement-range-div">                
       <div class="col-md-6 col-md-offset-3">
         <div class="row">
           <input id="engagement-range" type="range" name="points" min="0" max="100" value="25" data-rangeslider>  
@@ -96,12 +109,12 @@
         </div>                   
       </div>
     </div>                
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>
-    <div class="row filter-result">                
+    <div class="b-l-r row filter-result">                
       <div class="col-md-6 col-md-offset-3">                    
         <div class="row">
           <p class="calcVal" id="engaged-pipeline-val"></p>
@@ -111,27 +124,27 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>
-    <div class="row">                
+    <div class="b-l-r row">                
       <div class="col-md-6 col-md-offset-3">
         <div class="row">
           <input id="pass-screening-range" type="range" name="points" min="0" max="100" value="75" data-rangeslider>  
         </div>
         <div class="row">
-          <p>Pass Screening</p>  
+          <p>Screening Pass Rate</p>  
         </div>                    
       </div>
     </div>                
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>
-    <div class="row filter-result">                
+    <div class="b-l-r row filter-result">                
       <div class="col-md-6 col-md-offset-3">                    
         <div class="row">
           <p class="calcVal" id="interview-val"></p>
@@ -141,27 +154,27 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>
-    <div class="row">                
+    <div class="b-l-r row">                
       <div class="col-md-6 col-md-offset-3">
         <div class="row">
           <input id="offer-extended-range" type="range" name="points" min="0" max="100" value="40" data-rangeslider>  
         </div>
         <div class="row">
-          <p>Offer Extended</p>  
+          <p>Offer Rate</p>  
         </div>                                        
       </div>
     </div>                
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>
-    <div class="row filter-result">                
+    <div class="b-l-r row filter-result">                
       <div class="col-md-6 col-md-offset-3">
         <div class="row">
           <p class="calcVal" id="offered-val">40</p>
@@ -171,27 +184,27 @@
         </div>
       </div>
     </div>     
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>
-    <div class="row">                
+    <div class="b-l-r row">                
       <div class="col-md-6 col-md-offset-3">
         <div class="row">
           <input id="offer-acceptance-range" type="range" name="points" min="0" max="100" value="80" data-rangeslider>  
         </div>
         <div class="row">
-          <p>Offer Acceptance</p>  
+          <p>Acceptance Rate</p>  
         </div>                                                            
       </div>
     </div>                
-    <div class="row">
+    <div class="b-l-r row">
       <div class="arrow-parent">
         <div class="arrow-down"></div>  
       </div>   
     </div>
-    <div class="row well" style="border-top:none; border-bottom: 2px solid #1ac6ff">                
+    <div class="b-l-r row well well-bottom">                
       <div class="col-md-6 col-md-offset-3">                    
         <div class="row">
           <p class="calcVal" id="hired-candidate-val">10</p>
@@ -202,4 +215,7 @@
       </div>
     </div>                                
   </form>
+  <ol id="responseRateApp-tour">
+    <li data-id="response-rate-range-div">All Rate Filters in this illustration are dynamic. Change them to represent your candidate pipeline.</li>
+  </ol>  
 </div>

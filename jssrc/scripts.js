@@ -157,6 +157,8 @@
     padZeroes: true,
     layout: $('.countdown').html()
   });
+                 
+  
   $('#join').click(function() {
     var Prospect = Parse.Object.extend("prospect");
     var prospect = new Prospect();

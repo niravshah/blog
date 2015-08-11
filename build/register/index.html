@@ -125,7 +125,7 @@
                         <div class="col-sm-5 social-wrap">
                             <div class="footer-title">Social Networks</div>
                             <ul class="list-inline socials">
-                                <li><a href="#"><span class="icon icon-socialmedia-05"></span></a></li>
+                                <li><a href="https://www.linkedin.com/company/specky---intelligent-job-specs"><span class="icon icon-socialmedia-05"></span></a></li>
                                 <li><a href="#"><span class="icon icon-socialmedia-06"></span></a></li>
                             </ul>
                         </div>
@@ -157,6 +157,8 @@
         <link rel="stylesheet" href="/assets/js/bower_components/ionrangeslider/css/ion.rangeSlider.css" type="text/css" media="all" />
         <link rel="stylesheet" href="/assets/js/bower_components/ionrangeslider/css/ion.rangeSlider.skinModern.css" type="text/css" media="all" />
     
+        <link rel="stylesheet" href="/assets/js/joyride/joyride-master/joyride-2.1.css" type="text/css" media="all" />
+    
         <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>        
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.7/script.min.js"></script>
@@ -178,6 +180,7 @@
                     $script('/assets/js/parse-1.5.0.min.js','parse');
                     $script('/assets/js/jquery.event.move.js', 'jquery.event');  
                     $script('/assets/js/jquery.twentytwenty.js', 'jquery.twentytwenty');
+                    $script('/assets/js/joyride/joyride-master/jquery.joyride-2.1.js', 'joyride');                    
                     $script('/assets/js/scripts.js','scripts');
                     $script.ready('toastr',function(){
                         toastr.options = {
@@ -187,7 +190,7 @@
                     $script.ready('parse',function(){
                         Parse.initialize("wLizknDtFC5dTuArjknWvq58fiHLohcBMsF3N79c", "pjmgLhlqWLRklIyIheAfOBJhvQczzXpE8wFxHND4");
                     });                                   
-                    $script.ready(['jquery.event','jquery.twentytwenty','rangeslider'],function(){
+                    $script.ready(['jquery.event','jquery.twentytwenty','rangeslider','joyride'],function(){
                       $(window).load(function(){                                              
                         $(".twentytwenty-container").twentytwenty({
                           default_offset_pct: 0.4
@@ -195,6 +198,12 @@
                         $('#clock').countdown('2015/10/01', function(event) {
                           $(this).html(event.strftime('%D days %H:%M:%S'));
                         }); 
+                        $("#responseRateApp-tour").joyride({
+                          autoStart : true,
+                          tipLocation: 'right',
+                          nextButton: false,
+                          timer: 2000
+                        });                          
                       });
                     });                  
                 });
@@ -210,3 +219,4 @@
         </script>                
 	</body>
 </html>
+

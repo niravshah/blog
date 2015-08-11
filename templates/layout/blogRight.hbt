@@ -42,5 +42,5 @@
       <li><a href="/blog/{{{this.link}}}">{{this.title}}</a></li>
       {{/each}}
     </ul>
-  </div>
+  </div>  
 </div>
