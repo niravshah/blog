@@ -1,0 +1,121 @@
+<form id="responseRateApp" class="col-md-12" style="padding-top:20px;padding-bottom:20px;">
+  <div class="row well">                
+    <div class="col-md-6 col-md-offset-3">                    
+      <div class="row">
+        <p class="calcVal" id="sourced-val"></p>
+      </div>
+      <div class="row">
+        <p>Candidates Sourced</p>  
+      </div>
+    </div>
+  </div>                
+  <div class="row">                
+    <div class="col-md-6 col-md-offset-3">
+      <div class="row">
+        <input id="response-rate-range" type="range" name="points" min="0" max="100" value="20" data-rangeslider>    
+      </div>
+      <div class="row">
+        <p>Response Rate</p>  
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">                
+    <div class="col-md-6 col-md-offset-3">        
+      <div class="row">
+        <p class="calcVal" id="pipeline-val"></p>
+      </div>
+      <div class="row">
+        <p>Candidates in Pipeline</p>  
+      </div>
+    </div>
+  </div> 
+  <hr/>
+  <div class="row">                
+    <div class="col-md-6 col-md-offset-3">
+      <div class="row">
+        <input id="engagement-range" type="range" name="points" min="0" max="100" value="25" data-rangeslider>  
+      </div>
+      <div class="row">
+        <p>Engagement Rate</p>  
+      </div>                   
+    </div>
+  </div>                
+  <hr/>
+  <div class="row">                
+    <div class="col-md-6 col-md-offset-3">                    
+      <div class="row">
+        <p class="calcVal" id="engaged-pipeline-val"></p>
+      </div>
+      <div class="row">
+        <p>Engaged Pipeline</p>  
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">                
+    <div class="col-md-6 col-md-offset-3">
+      <div class="row">
+        <input id="pass-screening-range" type="range" name="points" min="0" max="100" value="75" data-rangeslider>  
+      </div>
+      <div class="row">
+        <p>Pass Screening</p>  
+      </div>                    
+    </div>
+  </div>                
+  <hr/>
+  <div class="row">                
+    <div class="col-md-6 col-md-offset-3">                    
+      <div class="row">
+        <p class="calcVal" id="interview-val"></p>
+      </div>
+      <div class="row">
+        <p>Candidates At Interview</p>  
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">                
+    <div class="col-md-6 col-md-offset-3">
+      <div class="row">
+        <input id="offer-extended-range" type="range" name="points" min="0" max="100" value="40" data-rangeslider>  
+      </div>
+      <div class="row">
+        <p>Offer Extended</p>  
+      </div>                                        
+    </div>
+  </div>                
+  <hr/>
+  <div class="row">                
+    <div class="col-md-6 col-md-offset-3">
+      <div class="row">
+        <p class="calcVal" id="offered-val">40</p>
+      </div>
+      <div class="row">
+        <p>Candidates with Offer</p>  
+      </div>
+    </div>
+  </div>     
+  <hr/>
+  <div class="row">                
+    <div class="col-md-6 col-md-offset-3">
+      <div class="row">
+        <input id="offer-acceptance-range" type="range" name="points" min="0" max="100" value="80" data-rangeslider>  
+      </div>
+      <div class="row">
+        <p>Offer Acceptance</p>  
+      </div>                                                            
+    </div>
+  </div>                
+  <hr/>
+  <div class="row well" style="border-top:none; border-bottom: 2px solid #1ac6ff">                
+    <div class="col-md-6 col-md-offset-3">                    
+      <div class="row">
+        <p class="calcVal" id="hired-candidate-val">10</p>
+      </div>
+      <div class="row">
+        <p>Candidates Hired</p>  
+      </div>
+    </div>
+  </div>                                
+</form>

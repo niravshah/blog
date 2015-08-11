@@ -42,8 +42,9 @@
             </li>
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active"><a href='#'>{{{title}}}</a></li>
         </ol>        
-        <div class="col-md-8 col-xs-12">
+        <div class="col-md-7 col-xs-12">
             <h1>{{{title}}}</h1>
+            <br/>
             <article>
               <p>As more and more recruting agencies start investing capital in proactive sourcing strategies and move away from the conventional 'Spray and Pray' paradigm of 
                 posting a vacancy on job boards and waiting for candidates to reply; the number of candidates who respond back and the quality of candidates engaged 
@@ -54,111 +55,7 @@
               <p>Lets put Candidate Response Rates into some perspective via a typical Candidate Funnel that tracks the journey of candidate
                 from a prospect to a hire. The example funnel below is interactive. So feel free to play with it using your own metrics.</p>
               
-              <form class="col-md-12" style="padding-top:20px;padding-bottom:20px;">
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates Sourced</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="sourced-val"></p>
-                  </div>
-                </div>                              
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Response Rate</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="response-rate-range" type="range" name="points" min="0" max="100" step="10" value="20" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="response-range-val">20</p>
-                  </div>
-                </div>
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates in Pipeline</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="pipeline-val"></p>
-                  </div>
-                </div> 
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Engagement Rate</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="engagement-range" type="range" name="points" min="0" max="100" step="10" value="25" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="engagement-val">25</p>
-                  </div>
-                </div>                
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Engaged Pipeline</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="engaged-pipeline-val"></p>
-                  </div>
-                </div>
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Pass Screening</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="pass-screening-range" type="range" name="points" min="0" max="100" step="10" value="75" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="pass-screening-val">75</p>
-                  </div>
-                </div>                
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates At Interview</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="interview-val"></p>
-                  </div>
-                </div>
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Offer Extended</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="offer-extended-range" type="range" name="points" min="0" max="100" step="10" value="40" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="offer-extended-val">40</p>
-                  </div>
-                </div>                
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates with Offer</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="offered-val"></p>
-                  </div>
-                </div>     
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Offer Acceptance</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="offer-acceptance-range" type="range" name="points" min="0" max="100" step="10" value="80" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="offer-acceptance-val">80</p>
-                  </div>
-                </div>                
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates Hired</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="hired-candidate-val">10</p>
-                  </div>
-                </div>                
-              </form>
+              {{> responseCalc}}
 
               <p>A typical agency would see response rates of 15%-20% taking the number of candidates you need to source to place 1 hire to 139! The low candidate response rates can be
                 attributed to various deficiencies of the prevelant sourcing and candidate communication process. The most popular approach being sending out generic irrelevant email blasts 
@@ -175,17 +72,19 @@
 
               <p>So there are definite gains, financial and reputational, by improving the quality of communication and increasing the response rates.
                 In our next blog post, we will address some reasons for low response rates and how you could improve these. Stay Tuned.</p>             
-              
-                <p>
-                    <span class="author">By <a rel="author" href="mailto:{{{this.author.email}}}">{{{this.author.name}}}</a></span> 
-                    on <time pubdate datetime="{{{this.datetime}}}">{{{this.datetime}}}</time>
-                </p>
+
+              <br>
+              <p>                
+                <span class="author">By <a rel="author" href="mailto:{{{this.author.email}}}">{{{this.author.name}}}</a></span> 
+                on <time pubdate datetime="{{{this.datetime}}}">{{{this.datetime}}}</time>
+              </p>
             </article>
             <div id="disqus_thread"></div>
         </div>
-        <div class="col-md-4 well hidden-xs">
-        </div>
-     
+        <div class="col-md-1 hidden-xs"></div>
+        <div class="col-md-4  hidden-xs">
+           {{> blogRight}}
+        </div>     
         <script type="text/javascript">
             var disqus_shortname = 'specky';
             var disqus_identifier = '/post/' + '{{{this.link}}}' ;
@@ -196,6 +95,11 @@
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
         </script>
+        <style>
+          article p{
+            text-align:justify;
+          }
+        </style>
     </div>
 </div>
 </div>

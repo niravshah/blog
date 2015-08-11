@@ -8,48 +8,53 @@
   };
   
   app.fn.responseRateCalc = function(){
-    var responseRate = parseInt($('#response-rate-range').val());
-    $('#response-range-val').text(responseRate);
-    var engagementRate = parseInt($('#engagement-range').val());
-    $('#engagement-val').text(engagementRate);
-    var screeningRate = parseInt($('#pass-screening-range').val());
-    $('#pass-screening-val').text(screeningRate);
-    var offerRate = parseInt($('#offer-extended-range').val());
-    $('#offer-extended-val').text(offerRate);
-    var acceptanceRate = parseInt($('#offer-acceptance-range').val());
-    $('#offer-acceptance-val').text(acceptanceRate);
-    
     var hired = parseInt($('#hired-candidate-val').text());
+    
+    var responseRate = parseInt($('#response-rate-range').val());
+    var engagementRate = parseInt($('#engagement-range').val());
+    var screeningRate = parseInt($('#pass-screening-range').val());
+    var offerRate = parseInt($('#offer-extended-range').val());
+    var acceptanceRate = parseInt($('#offer-acceptance-range').val());
+    
     //console.log(responseRate,engagementRate,screeningRate,offerRate,acceptanceRate,hired);
 
-    var candidatesWithOffer = Math.ceil((hired*100)/acceptanceRate);    
-    $('#offered-val').text(candidatesWithOffer);
-    var candidatesWithInterview = Math.ceil((candidatesWithOffer * 100)/offerRate);
-    $('#interview-val').text(candidatesWithInterview);
-    var engagedPipeline = Math.ceil((candidatesWithInterview * 100)/screeningRate);
-    $('#engaged-pipeline-val').text(engagedPipeline);
-    var pipeline = Math.ceil((engagedPipeline * 100)/engagementRate);
-    $('#pipeline-val').text(pipeline);
+    var candidatesWithOffer = Math.ceil((hired*100)/acceptanceRate);        
+    var candidatesWithInterview = Math.ceil((candidatesWithOffer * 100)/offerRate);    
+    var engagedPipeline = Math.ceil((candidatesWithInterview * 100)/screeningRate);    
+    var pipeline = Math.ceil((engagedPipeline * 100)/engagementRate);    
     var sourcedCandidates =Math.ceil((pipeline * 100)/responseRate);
+    
+    $('#offered-val').text(candidatesWithOffer);
+    $('#interview-val').text(candidatesWithInterview);
+    $('#engaged-pipeline-val').text(engagedPipeline);
+    $('#pipeline-val').text(pipeline);
     $('#sourced-val').text(sourcedCandidates);
   };
   
-  
   var rangeSliderSelector    = '[data-rangeslider]',
       $rangeSliderElement    = $(rangeSliderSelector);
-
-  $rangeSliderElement.rangeslider({
-    polyfill: false,
-    onInit: function() {
-      //console.log('Range Slider Init');
+   
+  $rangeSliderElement.ionRangeSlider({
+    type: "single",
+    min: 0,
+    max: 100,    
+    step:5,
+    grid:true,
+    postfix:"%",
+    keyboard: true,
+    onStart: function (data) {
+      console.log("onStart");
       app.fn.responseRateCalc();
     },
-    onSlide: function(position, value) {
-      //console.log('Range Slider onSlide');
+    onChange: function (data) {
+      console.log("onChange");
       app.fn.responseRateCalc();
     },
-    onSlideEnd: function(position, value) {
-      //console.log('onSlideEnd');      
+    onFinish: function (data) {
+      console.log("onFinish");
+    },
+    onUpdate: function (data) {
+      console.log("onUpdate");
     }
   });
 

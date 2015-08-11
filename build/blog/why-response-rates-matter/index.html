@@ -47,7 +47,7 @@
             <ul class="navigation-bar navigation-bar-left">
                 <li><a href="/blog">Blog</a></li>
                 <li>></li>
-                <li class="active"><a href="#">Importance of Candidate Response Rates</a></li>
+                <li class="active"><a href="#">Why does Candidate Response Rate matter?</a></li>
             </ul>            
             <ul class="navigation-bar navigation-bar-right">
                 <li><a href="/">Home</a></li>
@@ -67,10 +67,11 @@
             </li>
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/blog">Blog</a>
             </li>
-            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active"><a href='#'>Importance of Candidate Response Rates</a></li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active"><a href='#'>Why does Candidate Response Rate matter?</a></li>
         </ol>        
-        <div class="col-md-8 col-xs-12">
-            <h1>Importance of Candidate Response Rates</h1>
+        <div class="col-md-7 col-xs-12">
+            <h1>Why does Candidate Response Rate matter?</h1>
+            <br/>
             <article>
               <p>As more and more recruting agencies start investing capital in proactive sourcing strategies and move away from the conventional 'Spray and Pray' paradigm of 
                 posting a vacancy on job boards and waiting for candidates to reply; the number of candidates who respond back and the quality of candidates engaged 
@@ -81,112 +82,127 @@
               <p>Lets put Candidate Response Rates into some perspective via a typical Candidate Funnel that tracks the journey of candidate
                 from a prospect to a hire. The example funnel below is interactive. So feel free to play with it using your own metrics.</p>
               
-              <form class="col-md-12" style="padding-top:20px;padding-bottom:20px;">
+              <form id="responseRateApp" class="col-md-12" style="padding-top:20px;padding-bottom:20px;">
+                <div class="row well">                
+                  <div class="col-md-6 col-md-offset-3">                    
+                    <div class="row">
+                      <p class="calcVal" id="sourced-val"></p>
+                    </div>
+                    <div class="row">
+                      <p>Candidates Sourced</p>  
+                    </div>
+                  </div>
+                </div>                
                 <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates Sourced</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="sourced-val"></p>
-                  </div>
-                </div>                              
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Response Rate</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="response-rate-range" type="range" name="points" min="0" max="100" step="10" value="20" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="response-range-val">20</p>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="row">
+                      <input id="response-rate-range" type="range" name="points" min="0" max="100" value="20" data-rangeslider>    
+                    </div>
+                    <div class="row">
+                      <p>Response Rate</p>  
+                    </div>
                   </div>
                 </div>
+                <hr/>
                 <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates in Pipeline</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="pipeline-val"></p>
+                  <div class="col-md-6 col-md-offset-3">        
+                    <div class="row">
+                      <p class="calcVal" id="pipeline-val"></p>
+                    </div>
+                    <div class="row">
+                      <p>Candidates in Pipeline</p>  
+                    </div>
                   </div>
                 </div> 
+                <hr/>
                 <div class="row">                
-                  <div class="col-md-6">
-                    <p>Engagement Rate</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="engagement-range" type="range" name="points" min="0" max="100" step="10" value="25" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="engagement-val">25</p>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="row">
+                      <input id="engagement-range" type="range" name="points" min="0" max="100" value="25" data-rangeslider>  
+                    </div>
+                    <div class="row">
+                      <p>Engagement Rate</p>  
+                    </div>                   
                   </div>
                 </div>                
+                <hr/>
                 <div class="row">                
-                  <div class="col-md-6">
-                    <p>Engaged Pipeline</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="engaged-pipeline-val"></p>
+                  <div class="col-md-6 col-md-offset-3">                    
+                    <div class="row">
+                      <p class="calcVal" id="engaged-pipeline-val"></p>
+                    </div>
+                    <div class="row">
+                      <p>Engaged Pipeline</p>  
+                    </div>
                   </div>
                 </div>
+                <hr/>
                 <div class="row">                
-                  <div class="col-md-6">
-                    <p>Pass Screening</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="pass-screening-range" type="range" name="points" min="0" max="100" step="10" value="75" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="pass-screening-val">75</p>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="row">
+                      <input id="pass-screening-range" type="range" name="points" min="0" max="100" value="75" data-rangeslider>  
+                    </div>
+                    <div class="row">
+                      <p>Pass Screening</p>  
+                    </div>                    
                   </div>
                 </div>                
+                <hr/>
                 <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates At Interview</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="interview-val"></p>
+                  <div class="col-md-6 col-md-offset-3">                    
+                    <div class="row">
+                      <p class="calcVal" id="interview-val"></p>
+                    </div>
+                    <div class="row">
+                      <p>Candidates At Interview</p>  
+                    </div>
                   </div>
                 </div>
+                <hr/>
                 <div class="row">                
-                  <div class="col-md-6">
-                    <p>Offer Extended</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="offer-extended-range" type="range" name="points" min="0" max="100" step="10" value="40" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="offer-extended-val">40</p>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="row">
+                      <input id="offer-extended-range" type="range" name="points" min="0" max="100" value="40" data-rangeslider>  
+                    </div>
+                    <div class="row">
+                      <p>Offer Extended</p>  
+                    </div>                                        
                   </div>
                 </div>                
+                <hr/>
                 <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates with Offer</p>  
-                  </div>
-                  <div class="col-md-6">                    
-                    <p id="offered-val"></p>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="row">
+                      <p class="calcVal" id="offered-val">40</p>
+                    </div>
+                    <div class="row">
+                      <p>Candidates with Offer</p>  
+                    </div>
                   </div>
                 </div>     
+                <hr/>
                 <div class="row">                
-                  <div class="col-md-6">
-                    <p>Offer Acceptance</p>  
-                  </div>
-                  <div class="col-md-3">
-                    <input id="offer-acceptance-range" type="range" name="points" min="0" max="100" step="10" value="80" data-rangeslider>  
-                  </div>
-                  <div class="col-md-3">
-                    <p id="offer-acceptance-val">80</p>
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="row">
+                      <input id="offer-acceptance-range" type="range" name="points" min="0" max="100" value="80" data-rangeslider>  
+                    </div>
+                    <div class="row">
+                      <p>Offer Acceptance</p>  
+                    </div>                                                            
                   </div>
                 </div>                
-                <div class="row">                
-                  <div class="col-md-6">
-                    <p>Candidates Hired</p>  
+                <hr/>
+                <div class="row well" style="border-top:none; border-bottom: 2px solid #1ac6ff">                
+                  <div class="col-md-6 col-md-offset-3">                    
+                    <div class="row">
+                      <p class="calcVal" id="hired-candidate-val">10</p>
+                    </div>
+                    <div class="row">
+                      <p>Candidates Hired</p>  
+                    </div>
                   </div>
-                  <div class="col-md-6">                    
-                    <p id="hired-candidate-val">10</p>
-                  </div>
-                </div>                
+                </div>                                
               </form>
-
               <p>A typical agency would see response rates of 15%-20% taking the number of candidates you need to source to place 1 hire to 139! The low candidate response rates can be
                 attributed to various deficiencies of the prevelant sourcing and candidate communication process. The most popular approach being sending out generic irrelevant email blasts 
                 to the sourced candidates</p>
@@ -202,27 +218,71 @@
 
               <p>So there are definite gains, financial and reputational, by improving the quality of communication and increasing the response rates.
                 In our next blog post, we will address some reasons for low response rates and how you could improve these. Stay Tuned.</p>             
-              
-                <p>
-                    <span class="author">By <a rel="author" href="mailto:info@specky.co">Specky</a></span> 
-                    on <time pubdate datetime="Thu Aug 06 2015 12:00:00 GMT+0000 (UTC)">Thu Aug 06 2015 12:00:00 GMT+0000 (UTC)</time>
-                </p>
+
+              <br>
+              <p>                
+                <span class="author">By <a rel="author" href="mailto:info@specky.co">Specky</a></span> 
+                on <time pubdate datetime="Thu Aug 06 2015 12:00:00 GMT+0000 (UTC)">Thu Aug 06 2015 12:00:00 GMT+0000 (UTC)</time>
+              </p>
             </article>
             <div id="disqus_thread"></div>
         </div>
-        <div class="col-md-4 well hidden-xs">
-        </div>
-     
+        <div class="col-md-1 hidden-xs"></div>
+        <div class="col-md-4  hidden-xs">
+           <style>
+             .well{
+               padding-left:20px;
+             }
+             
+             #blogRight h3{
+               font-size:30px;
+               text-align:center;
+               padding-bottom:10px;
+             }
+             
+             .form-group.form-control{
+               padding-bottom:10px;
+             }
+             
+           </style>
+           <div id="blogRight"> 
+             <div class="row well">
+               <h3>Subscribe To Specky</h3>
+               <div class="form">
+                 <div class="form-group">
+                   <input size="25" type="text" class="form-control" id="NewsletterName" name="NewsletterName" placeholder="Your name"/> 
+                   <br/>
+                   <input size="25" type="email" class="form-control" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" />                                                
+                   <br/>
+                   <input id="subscribe" class="btn btn-primary" value="SUBSCRIBE" />
+                 </div>
+               </div>           
+             </div>         
+             <div class="row well">
+               <h3>Speck Blog</h3>
+             </div>
+             <div class="row well">
+               <h3>Resources</h3>
+               <ul>
+                 <li><a href="#">Candidate Pipeline Metrics Calculator</a></li>
+               </ul>
+             </div>
+           </div>        </div>     
         <script type="text/javascript">
             var disqus_shortname = 'specky';
             var disqus_identifier = '/post/' + 'why-response-rates-matter' ;
-            var disqus_title = 'Importance of Candidate Response Rates';            
+            var disqus_title = 'Why does Candidate Response Rate matter?';            
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                 dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
         </script>
+        <style>
+          article p{
+            text-align:justify;
+          }
+        </style>
     </div>
 </div>
 </div>
@@ -267,11 +327,14 @@
         <link rel="stylesheet" href="/assets/css/font-lineicons.css" type="text/css" media="all" />
         <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="/assets/css/toastr.min.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="/assets/js/bower_components/rangeslider.js/dist/rangeslider.css" type="text/css" media="all" />
+        
+        <link rel="stylesheet" href="/assets/js/bower_components/ionrangeslider/css/ion.rangeSlider.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="/assets/js/bower_components/ionrangeslider/css/ion.rangeSlider.skinModern.css" type="text/css" media="all" />
     
         <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>        
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.7/script.min.js"></script>
+    
         <script type="text/javascript">
             $script('/assets/js/jquery-2.1.0.min.js?ver=1', 'jquery');
             $script.ready('jquery', function() {
@@ -282,9 +345,8 @@
                 $script('/assets/js/jquery.plugin.js','jquery.plugin');
                 $script('/assets/js/bower_components/jquery.countdown/dist/jquery.countdown.min.js','jquery.countdown');
                 $script('/assets/js/headhesive.min.js','headhesive');
-                $script.ready(['jquery.nav','jquery.appear','jquery.plugin','jquery.countdown','headhesive'], function() {
-                    
-                    $script('/assets/js/bower_components/rangeslider.js/dist/rangeslider.min.js','rangeslider');      
+                $script.ready(['jquery.nav','jquery.appear','jquery.plugin','jquery.countdown','headhesive'], function() {                    
+                    $script('/assets/js/bower_components/ionrangeslider/js/ion.rangeSlider.min.js','rangeslider');                  
                     $script('/assets/js/toastr.min.js','toastr');    
                     $script('/assets/mailchimp/js/mailing-list.js','mailchimp');    
                     $script('/assets/js/parse-1.5.0.min.js','parse');
@@ -295,14 +357,12 @@
                         toastr.options = {
                             "positionClass": "toast-top-full-width"
                         };
-                    })
+                    });
                     $script.ready('parse',function(){
                         Parse.initialize("wLizknDtFC5dTuArjknWvq58fiHLohcBMsF3N79c", "pjmgLhlqWLRklIyIheAfOBJhvQczzXpE8wFxHND4");
-                    });
-                                    
+                    });                                   
                     $script.ready(['jquery.event','jquery.twentytwenty','rangeslider'],function(){
-                      $(window).load(function(){                       
-                       
+                      $(window).load(function(){                                              
                         $(".twentytwenty-container").twentytwenty({
                           default_offset_pct: 0.4
                         });

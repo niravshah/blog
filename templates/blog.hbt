@@ -44,7 +44,7 @@
             <li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/blog">Blog</a>
             </li>
         </ol>            
-        <div class="col-md-8">
+        <div class="col-md-7">
             <div class="row">
             {{#each collections.blog}}
               <div class="col-md-5 col-xs-12">
@@ -64,9 +64,11 @@
             {{/each}}
             </div>
         </div>
-        <div class="col-md-4 well hidden-xs">
-        </div>
-    </div>
+      <div class="col-md-1 hidden-xs"></div>
+      <div class="col-md-4  hidden-xs">
+        {{> blogRight}}
+      </div>         
+  </div>
 </div>
 </div>
 {{/content}}

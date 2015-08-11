@@ -32,8 +32,12 @@ var git = require('gulp-git');
 
 var handlebars = require('handlebars'),
     layouts = require('handlebars-layouts');
+
 handlebars.registerHelper(layouts(handlebars));
 handlebars.registerPartial('layout', fs.readFileSync(__dirname + '/templates/layout/default.hbt').toString());
+handlebars.registerPartial('responseCalc', fs.readFileSync(__dirname + '/templates/layout/responseCalc.hbt').toString());
+handlebars.registerPartial('blogRight', fs.readFileSync(__dirname + '/templates/layout/blogRight.hbt').toString());
+
 handlebars.registerHelper("log", function(something) {
     console.log(something);
 });
@@ -78,8 +82,8 @@ gulp.task('clean', function() {
     }).pipe(clean());
 });
 gulp.task('minify-js', function() {
-    //return gulp.src('./jssrc/*.js').pipe(uglify()).pipe(gulp.dest('./build/assets/js'));
-    return gulp.src('./jssrc/*.js').pipe(gulp.dest('./build/assets/js'));
+    return gulp.src('./jssrc/*.js').pipe(uglify()).pipe(gulp.dest('./build/assets/js'));
+    //return gulp.src('./jssrc/*.js').pipe(gulp.dest('./build/assets/js'));
 });
 gulp.task('minify-css', function() {
     return gulp.src('./csssrc/*.css').pipe(minifyCss({
@@ -124,18 +128,6 @@ gulp.task('critical', function() {
     });
 });
 
-gulp.task('scp', function() {
-  return gulp.src('build/**/*.*')
-  .pipe(scp({
-    host: '160.153.57.100',
-    username: 'niravshah',    
-    dest: '/home/niravshah/public_html/'
-  }))
-  .on('error', function(err) {
-    console.log(err);
-  });
-});
-
 gulp.task('sitemap', function () {
   gulp.src('build/**/*.html')
     .pipe(sitemap({
@@ -147,15 +139,31 @@ gulp.task('sitemap', function () {
 });
 
 
-gulp.task('git', function(){
+gulp.task('git', function(cb){
+  runSequence('git-add-commit','git-push',cb)
+});
+
+gulp.task('git-add-commit', function(){
   return gulp.src('.')
     .pipe(git.add())
     .pipe(git.commit('Updates'));    
 });
 
-gulp.task('push', function(){
+gulp.task('git-push', function(){
   git.push('origin', 'master', function (err) {
     if (err) throw err;
   });
 });
 
+gulp.task('scp', function() {
+  return gulp.src('build/**/*.*')
+  .pipe(scp({
+    host: '160.153.57.100',
+    username: 'niravshah',
+    password:'Alpha6383',
+    dest: '/home/niravshah/public_html/'
+  }))
+  .on('error', function(err) {
+    console.log(err);
+  });
+});

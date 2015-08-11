@@ -18,7 +18,7 @@
             <ul class="navigation-bar navigation-bar-left">
                 <li><a href="/blog">Blog</a></li>
                 <li>></li>
-                <li class="active"><a href="">{{title}}</a></li>
+                <li class="active"><a href="#">{{title}}</a></li>
             </ul>            
             <ul class="navigation-bar navigation-bar-right">
                 <li><a href="/">Home</a></li>
@@ -42,7 +42,7 @@
             </li>
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active">{{{title}}}</li>
         </ol>        
-        <div class="col-md-8 col-xs-12">
+        <div class="col-md-7 col-xs-12">
             <h1>{{{title}}}</h1>
             <article>
                 {{{contents}}}
@@ -52,6 +52,10 @@
                 </p>
             </article>
         </div>
+        <div class="col-md-1 hidden-xs"></div>
+        <div class="col-md-4  hidden-xs">
+          {{> blogRight}}
+        </div>         
        <div id="disqus_thread"></div>
         <script type="text/javascript">
             var disqus_shortname = 'specky';

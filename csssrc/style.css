@@ -1295,3 +1295,30 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
   bottom: 50%;
   margin-bottom: -17px;
 }
+
+
+
+/*Response Rate Calculator*/
+#responseRateApp p{
+  text-align:center;
+  font-size:12px;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+#responseRateApp p.calcVal#hired-candidate-val{
+  color: green;
+  font-size: 30px;
+}
+
+#responseRateApp p.calcVal#sourced-val{
+  color: red;
+  font-size: 30px;
+}
+
+
+#responseRateApp p.calcVal{
+  font-size:24px;
+}
+
+/*END  - Response Rate Calculator*/

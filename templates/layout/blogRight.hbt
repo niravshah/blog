@@ -1,0 +1,39 @@
+<style>
+  .well{
+    padding-left:20px;
+  }
+  
+  #blogRight h3{
+    font-size:30px;
+    text-align:center;
+    padding-bottom:10px;
+  }
+  
+  .form-group.form-control{
+    padding-bottom:10px;
+  }
+  
+</style>
+<div id="blogRight"> 
+  <div class="row well">
+    <h3>Subscribe To Specky</h3>
+    <div class="form">
+      <div class="form-group">
+        <input size="25" type="text" class="form-control" id="NewsletterName" name="NewsletterName" placeholder="Your name"/> 
+        <br/>
+        <input size="25" type="email" class="form-control" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" />                                                
+        <br/>
+        <input id="subscribe" class="btn btn-primary" value="SUBSCRIBE" />
+      </div>
+    </div>           
+  </div>         
+  <div class="row well">
+    <h3>Speck Blog</h3>
+  </div>
+  <div class="row well">
+    <h3>Resources</h3>
+    <ul>
+      <li><a href="#">Candidate Pipeline Metrics Calculator</a></li>
+    </ul>
+  </div>
+</div>

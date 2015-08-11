@@ -1,7 +1,7 @@
 ---
 page-title: Why does Candidate Response Rate matter?
 page-description: This blog puts into perspective the necessity of optimising the recruitment funnel and improving candidate communication and response rates to reduce the number of candidates you need to source per hire
-title: Importance of Candidate Response Rates
+title: Why does Candidate Response Rate matter?
 link: why-response-rates-matter
 template: post-a.hbt
 datetime: 2015-08-06 12:00:00
