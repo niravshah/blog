@@ -29,7 +29,6 @@ var scp = require('gulp-scp2');
 var sitemap = require('gulp-sitemap');
 var git = require('gulp-git');
 
-
 var handlebars = require('handlebars'),
     layouts = require('handlebars-layouts');
 
@@ -173,4 +172,6 @@ gulp.task('scp', function() {
 
 gulp.task('deploy', function(){
   runSequence('git','scp');
-})
+});
+
+
