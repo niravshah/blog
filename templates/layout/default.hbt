@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="utf-8">
         
-        <title>Specky - {{{page-title}}}</title>
+        <title>Recruit Sys - {{{page-title}}}</title>
         <meta name="description" content="{{{page-description}}}">
         <meta name="keywords" content="recruting, passive candidates, job specs, job descriptions">
        
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <meta name="google-site-verification" content="JBcEAN9-gC_rqMIITbZ1Gm732di0eK8gA5gqTSs4054" />
 	
 		    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-196x196.png" sizes="196x196" />
@@ -42,7 +44,7 @@
                             <div class="logo-wrapper">
                                 <img src="/assets/img/speck-hdpi.png" alt="logo" />
                             </div>
-                            <p><strong>Specky</strong>.</p>
+                            <p><strong>Recruit Sys</strong>.</p>
                             <p>Intelligent Job Descriptions. Improve candidate engagement by providing candidates the information that helps them make crucial career decisions. </p>                        
                         </div>
                         <div class="col-sm-5 social-wrap">
@@ -57,7 +59,7 @@
                             <ul class="list-unstyled">
                                 <li>
                                     <span class="icon icon-chat-messages-14"></span> 
-                                    <a href="mailto:info@startup.ly">info@specky.co</a>
+                                    <a href="mailto:info@startup.ly">info@recruitsys.com</a>
                                 </li>
                                 <li>
                                     <span class="icon icon-seo-icons-34"></span> 
@@ -67,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="copyright">specky.co 2015. All rights reserved.</div>
+                <div class="copyright">recruitsys.com 2015. All rights reserved.</div>
             </footer>
 
         <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
@@ -145,7 +147,6 @@
           ga('create', 'UA-66445969-1', 'auto');
           ga('send', 'pageview');
         </script>
-        <script src="//load.sumome.com/" data-sumo-site-id="2f2ea30de780935185fa58332d1c30052ee4b3ce8a61ba9408942c214daa12c9" async="async"></script>
 	</body>
 </html>
 
