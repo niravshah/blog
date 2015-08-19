@@ -55,7 +55,7 @@ a:hover, a:active, a:focus { color: #1ac6ff; text-decoration: none; outline: non
 hr { width: 100%; border-top: 1px solid #E9E9E9; display: inline-block; }
 
 .light { color: #fff; background: #333; }
-.dark { color: #000; background: #fff; }
+.dark { color: #000; background: #ededed; }
 .highlight { color: #1ac6ff; } 
 .center {text-align:center;}
 .resp-center {text-align:center;}
@@ -110,7 +110,7 @@ article { text-align: left; }
 .navigation { background: #fafafa; z-index: 2; }
 .navigation-brand { float: left; }
 .navigation-brand:after { content: ''; display: table; }
-.navigation-brand .brand-logo  { width:215px; height:50px; }
+.navigation-brand .brand-logo  { width:315px; height:50px; }
 .navigation-brand .brand-logo .logo { display:block; height: 30px; background:url(../img/logo.png) center center no-repeat; }
 .fixmenu-clone .brand-logo .logo { background:url(../img/logo-inverted.png) center center no-repeat; }
 .navigation-brand .brand-logo h4 { margin-top:15px; }
@@ -367,7 +367,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
 .embed-container iframe { border: 0; }
 
 .section { padding: 40px 0; }
-.section .section-header { margin-top: 50px; margin-bottom: 50px; }
+.section .section-header { margin-top: 20px; margin-bottom: 20px; }
 
 .light .sub-heading, .light p { color: #fff; }
 
@@ -389,7 +389,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
 #steps p { color: #6f6f6f; font-size:16px; font-weight: 300; }
 #steps .col-sm-4 .icon { position: absolute; font-size: 50px; top: 10px; right: 0; margin-right: -25px; color: #DDDDDD; } 
 
-#about  { padding:60px 0px 0px 0px;}
+#about  { padding:20px 0px 0px 0px;}
 #process  { padding:20px 0px 90px 0px;}
 .howitworks { font-size:81px; vertical-align: middle; }
 
@@ -739,37 +739,37 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
 }
 
 @media (max-width: 480px) {
-    
-    h2 { font-size: 27px; font-weight: 300; display: block; } 
-    h3 { font-size: 24px; font-weight: 300; display: block; } 
 
-	.section { padding: 35px 0; }
-       .section .section-header{  margin-top: 20px;  margin-bottom: 20px;}
-    	.revo #main-slider .rev-big, .revo #main-slider .rev-normal { display: none; }
-	.static-header, #newsletter, #feedback, .footer { background-size: auto !important; background-size: auto !important; background-position: top center; background-attachment: scroll !important;}
+  h2 { font-size: 27px; font-weight: 300; display: block; } 
+  h3 { font-size: 24px; font-weight: 300; display: block; } 
 
-	#landing-page .static-header { min-height: 525px; }
-	#color-landing-page .static-header { min-height: 570px; }
-	.video-version .text-heading { padding-top: 35%; } 
-	#register-page .text-heading { padding-top: 65px; }
-	.text-heading { padding-top: 85px; }
-	.text-heading h1 { font-size: 35px; }
-	.text-heading .btn { margin-bottom: 10px; }
-	
-	.plain-version .text-heading { padding-top: 30%; }
-	
-	#about { padding: 40px 0px 0px 0px; }
-	.alt.nav-tabs > li > a { padding: 15px 12px; }
-	.alt.tab-content .tab-pane { padding-bottom: 15px; }
-	.alt.tab-content .tab-pane .btn { margin-top: 0px; }
-    .countdown .stat { font-size: 40px; line-height: 40px; }
-    .countdown .stat-info { font-size: 12px; }
-    .countdown .counter:after { top: 45px; }
-	.tab-content .btn { margin:0px 0px 15px 0px; }
-	
-	.logos li { display:inline; padding:10px !important; }
-	
-	.section-content article { text-align: center; }
+  .section { padding: 35px 0; }
+  .section .section-header{  margin-top: 20px;  margin-bottom: 20px;}
+  .revo #main-slider .rev-big, .revo #main-slider .rev-normal { display: none; }
+  .static-header, #newsletter, #feedback, .footer { background-size: auto !important; background-size: auto !important; background-position: top center; background-attachment: scroll !important;}
+
+  #landing-page .static-header { min-height: 525px; }
+  #color-landing-page .static-header { min-height: 570px; }
+  .video-version .text-heading { padding-top: 35%; } 
+  #register-page .text-heading { padding-top: 65px; }
+  .text-heading { padding-top: 85px; }
+  .text-heading h1 { font-size: 35px; }
+  .text-heading .btn { margin-bottom: 10px; }
+
+  .plain-version .text-heading { padding-top: 30%; }
+
+  #about { padding: 20px 0px 0px 0px; }
+  .alt.nav-tabs > li > a { padding: 15px 12px; }
+  .alt.tab-content .tab-pane { padding-bottom: 15px; }
+  .alt.tab-content .tab-pane .btn { margin-top: 0px; }
+  .countdown .stat { font-size: 40px; line-height: 40px; }
+  .countdown .stat-info { font-size: 12px; }
+  .countdown .counter:after { top: 45px; }
+  .tab-content .btn { margin:0px 0px 15px 0px; }
+
+  .logos li { display:inline; padding:10px !important; }
+
+  .section-content article { text-align: center; }
 
 	#featuredTab li.active > a .tab-info { -webkit-border-radius: 0px; -moz-border-radius: 0; border-radius: 0; }
 	#featuredTab li > a .tab-info .tab-title { font-size: 15px; }
